@@ -18,28 +18,17 @@
 // //     });
 // // });
 
-// // Initial display
-// showSlide(currentIndex);
+// Initial display
+showSlide(currentIndex);
 
-// const hamburger = document.getElementById('hamburger');
-// const sideMenu = document.getElementById('side-menu');
+const hamburger = document.getElementById('hamburger');
+const sideMenu = document.getElementById('side-menu');
 
-// hamburger.addEventListener('click', () => {
-//     hamburger.classList.toggle('active');
-//     sideMenu.classList.toggle('active');
-// });
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    sideMenu.classList.toggle('active');
+});
 
-// const divs = document.querySelectorAll('.treatments');
-
-// divs.forEach(div => {
-//     div.addEventListener('click', function() {
-//         // Remove the 'active' class from all divs
-//         divs.forEach(d => d.classList.remove('active'));
-        
-//         // Add the 'active' class to the clicked div
-//         this.classList.add('active');
-//     });
-// });
 
 
 // $(document).ready(function() {if ( $(window).width() < 835 ) {startCarouselyt();} else {$('.profileCarousel').addClass('off');}});    

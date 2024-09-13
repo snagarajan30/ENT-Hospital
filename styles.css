@@ -11,7 +11,7 @@ body{
     
 }
 .mainHeader-container{
-    width: 1296px;
+    width: 1556px;
     margin:0 auto;
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@ body{
     cursor: pointer;
     z-index: 1000;
     position: absolute;
-    right: 0px;
+    right: 62px;
     top: 4px;
 }
 
@@ -96,7 +96,7 @@ body{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width:70%;
+    width:60%;
     align-items:center;
     margin-top:40px;
     position: absolute;
@@ -116,7 +116,7 @@ body{
     color:#e77924;
 }
 .mainBanner-container{
-    width:1296px;
+    width:1556px;
     margin:0 auto;
     /* background:url('Images/bann.png'); */
     background-size: cover;
@@ -183,10 +183,10 @@ input[type="radio"] {
 .nav-button {
     width: 20px;
     height: 20px;
-    background-color: white;
+    background-color: #c5c5c5;
     transform: rotate(45deg);
     cursor: pointer;
-    border: 2px solid #1a2851;
+    
     transition: background-color 0.3s;
 }
 
@@ -205,16 +205,16 @@ input[type="radio"] {
     top: 20px;
 }
 .short-heading{
-    color: #e6dbd4;
-    font-size: 46px;
+    color: #ffffff;
+    font-size: 51px;
     margin: 0;
     font-weight: 400;
     font-family: 'Libre Franklin';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .heading{
-    color: #e6dbd4;
-    font-size: 74px;
+    color: #ffffff;
+    font-size: 76px;
     max-width: 277%;
     width: 386px;
     margin: 0;
@@ -224,7 +224,7 @@ input[type="radio"] {
 }
 .banner-contentContainer{
     position: absolute;
-    top: 292px;
+    top: 315px;
     left: 57px; 
 }
 .bannerBtn-container{
@@ -243,7 +243,7 @@ input[type="radio"] {
     border: 1px solid white;
     /* padding: 10px 30px 10px 30px; */
     max-width: 99%;
-    padding: 13px 20px 13px 20px;
+    padding: 13px 30px 13px 30px;
     font-family: 'Libre Franklin';
     letter-spacing: 2px;
     font-size: 12px;
@@ -257,12 +257,12 @@ input[type="radio"] {
     text-decoration: none;
     color: #e6dbd4;
     border: 1px solid #40579b;
-    padding: 13px 20px 13px 20px;
-        
+    padding: 13px 30px 13px 30px;
+    font-family: 'Libre Franklin';
     background:#40579b;
     letter-spacing: 2px;
     font-size: 12px;
-    border-radius:10px;
+    border-radius:6px;
     transition: 0.2s all ease-out;
 }
 .banner-btn2:hover{
@@ -291,7 +291,7 @@ input[type="radio"] {
 .section-para{
     font-size: 17px;
     line-height: 1.3;
-    font-family: 'Libre Baskerville';
+    font-family: 'Libre Franklin';
     color: #6e7691;
     font-weight: 500;
     margin: 0;
@@ -395,7 +395,8 @@ font-weight: 600;
     text-align: center;
     flex-basis: 398px;
     position:relative;
-    transition:0.2s all ease-out
+    transition:0.2s all ease-out;
+    border:1px solid transparent;
 }
 .profile-card:hover{
     border:1px solid  #959eb4;
@@ -624,7 +625,7 @@ font-weight: 600;
 .testimonials-info{
     flex: 2;
     background: #dae8e8;
-    height: 250px;
+    
     font-family: 'Libre Franklin';
     padding: 60px 207px 50px 100px;
     color: #6e7691;
@@ -669,10 +670,10 @@ font-weight: 600;
     unicode-bidi: bidi-override;
     font-size: 2em;
     color: #ddd;
-    display: inline-flex;
-    right: -100%;
-    top: -24px;
-    position: relative;
+    display: flex;
+    right: -101%;
+    top: 3px;
+    
   }
   
   .rating input {
@@ -726,8 +727,43 @@ font-weight: 600;
     opacity: 1;
     position: relative;
 }
+.tesimonialscarousel.owl-carousel {
+    display: block !important;
+    position: relative;
+}
+
 /* Navigation Dots */
-.testimonial-navigation {
+ .tesimonialscarousel.owl-carousel button.owl-dot{
+   
+        display: flex;
+        /* justify-content: center; */
+        gap: 8px;
+        margin-top: 20px;
+    
+        height: 4px;
+    width: 21px;
+        background-color: #d0d7d9;
+        border-radius: 10px;
+        
+        transition: background-color 0.3s ease;
+        /* position:absolute; */
+    }
+    .tesimonialscarousel.owl-carousel .owl-dots{
+        justify-content: center;
+        align-items:center;
+        right: 252px;
+        display: flex;
+        gap: 9px;
+    }
+    .tesimonialscarousel.owl-carousel .owl-nav{
+        display: none;
+    }    
+    .tesimonialscarousel.owl-carousel button.owl-dot.active {
+        background-color: #5f6d73;
+    }
+    
+
+/* .testimonial-navigation {
     text-align: center;
     margin-top: 20px;
     position: absolute;
@@ -749,10 +785,11 @@ font-weight: 600;
 }
 .dot span{
     cursor: pointer;
-}
+} */
     .blog-content{
         display: flex;
         gap: 36px;
+        padding-top:10px;
 
     }
 .blogs-container{
@@ -800,6 +837,7 @@ font-weight: 600;
 }
 .blog-box{
     width:409px;
+    transition: all 0.2s ease-out;
     
 }
 .blog-img{
@@ -943,6 +981,8 @@ li.links4:hover{
     text-decoration: none;
     color:#727b96;
     font-weight:600;
+    font-family: 'Libre Franklin';
+    font-size:13px;
 }
 .phone-link:hover, .mail-link:hover{
     text-decoration: underline;
@@ -1165,6 +1205,7 @@ li.links4:hover{
         padding-top: 20px;
         padding-bottom: 60px;
     }
+    
     .box {
         background: white;
         width: 122px;
@@ -1375,6 +1416,9 @@ li.links4:hover{
         left: 233px;
         border-radius: 24px 24px 25px 25px;
         width: 829px;
+    }
+    .tesimonialscarousel.owl-carousel .owl-dots {
+        right: 161px;
     }
     .box {
         background: white;
@@ -1611,6 +1655,14 @@ li.links4:hover{
         width: 275px;
         border-radius: 50%;
     }
+    .tesimonialscarousel.owl-carousel button.owl-dot {
+        display: flex;
+        /* justify-content: center; */
+        gap: 8px;
+        margin-top: 20px;
+        height: 5px;
+        width: 28px;
+    }
     .testimonials-info {
         flex: 2;
         background: #dae8e8;
@@ -1626,12 +1678,8 @@ li.links4:hover{
     .testimonial-para{
         font-size: 13px;
     }
-    .testimonial-navigation {
-        text-align: center;
-        margin-top: 20px;
-        position: absolute;
-        right: 38%;
-        top: 267px;
+    .tesimonialscarousel.owl-carousel .owl-dots {
+        right: 55px;
     }
     .testimonial-name {
         margin: 0;
@@ -1942,6 +1990,9 @@ li.links4:hover{
         padding-top: 20px;
         padding-bottom: 60px;
     }
+    .tesimonialscarousel.owl-carousel button.owl-dot{
+        width:20px;
+    }
     .testimonials-img {
         width: 258px;
         border-radius: 50%;
@@ -1971,10 +2022,9 @@ li.links4:hover{
         unicode-bidi: bidi-override;
         font-size: 2em;
         color: #ddd;
-        display: inline-flex;
-        right: -87%;
-        top: -24px;
-        position: relative;
+        display: flex;
+        
+       
     }
     .blogs-container {
         padding-top: 60px;
@@ -2636,10 +2686,8 @@ li.links4:hover{
         unicode-bidi: bidi-override;
         font-size: 2em;
         color: #ddd;
-        display: inline-flex;
-        right: -78%;
-        top: -24px;
-        position: relative;
+        display: flex;
+        
     }
     .blogs-container {
         padding-top: 60px;
@@ -2867,6 +2915,13 @@ li.links4:hover{
     .testimonials-heading {
         text-align: center;
         padding-bottom: 30px;
+    }
+    .rating {
+        direction: ltr;
+        unicode-bidi: bidi-override;
+        font-size: 2em;
+        color: #ddd;
+        display: flex;
     }
     .profile-image img {
         border-radius: 50%;
@@ -3533,6 +3588,9 @@ li.links4:hover{
     .testimonials-info {
         padding: 125px 49px 17px 49px;
         width: 364px;
+    }
+    .tesimonialscarousel.owl-carousel button.owl-dot {
+        width: 16px;
     }
     /* .testimonials-img {
         width: 143px;
