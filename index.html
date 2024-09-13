@@ -237,7 +237,7 @@
             </div>
              <div class="treatmentCarousel owl-carousel"> 
             <div class="treatments">
-                <img class="treatment-img" src="Images/implant otology.webp">
+                <img class="treatment-img" src="Images/implant_otology.webp">
                 <p class="treatment-para">
                     We offered this technology to india, thereby making the cure of hearing loss accessible andd affordable
                 </p>
@@ -280,7 +280,7 @@
             </div>
             <div class="noseTreatmentCarousel owl-carousel">
             <div class="treatments noses">
-                <img class="treatment-img" src="Images/implant otology.webp">
+                <img class="treatment-img" src="Images/implant_otology.webp">
                 <p class="treatment-para">
                     We offered this technology to india, thereby making the cure of hearing loss accessible andd affordable
                 </p>
@@ -347,22 +347,25 @@
 </section>
 <section class="testimonials">
     <div class="testimonials-container">
+
         <div class="testimonials-heading">
+            
             <h1 class="section-heading">
                 Testimonials
             </h1>
         </div>
-        <div class="testimonial-slider">
-            <div class="testimonial-slide active">
                 <div class="testimonial-content">
+                    
                     <div class="testimonialImg-container">
                         <img class="testimonials-img" src="Images/aruna-viswanathan-senior-consultant-ent.webp" alt="">
                     </div>
-                    <div class="testimonials-info">
+                    <div class="testimonials-info ">
+                        <div class="tesimonialscarousel owl-carousel">
+                            <div>   
                         <p class="testimonial-para">
-                            My son was suffering with frequent headache for the past 6 months. He experienced severe pain and swelling below his eyes...
+                            My son was suffering with frequent headache for the past 6 months. He experienced severe pain and swelling below his eyes i was worried with the medication prescribed and feltbad that he will be pushed...
                         </p>
-                        <div class="box"></div>
+                        
                         <p class="testimonial-name">
                             Bhuvaneswar, <span class="next-line">Coimbatore</span>
                         </p>
@@ -376,57 +379,8 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="testimonial-slide">
-                <div class="testimonial-content testimonialCarousel ">
-                    <div class="testimonialImg-container">
-                        <img class="testimonials-img" src="Images/anjana-visvanathan-otoneurosurgeon.webp
-                        " alt="">
-                    </div>
-                    <div class="testimonials-info">
-                        <p class="testimonial-para">
-                            My son was suffering with frequent headache for the past 6 months. He experienced severe pain and swelling below his eyes...
-                        </p>
-                        <div class="box"></div>
-                        <p class="testimonial-name">
-                            Bhuvaneswar, <span class="next-line">Coimbatore</span>
-                        </p>
-                        <div class="rating">
-                            <input type="radio" name="star1" id="star1-1"><label for="star1-1"></label>
-                            <input type="radio" name="star1" id="star1-2"><label for="star1-2"></label>
-                            <input type="radio" name="star1" id="star1-3"><label for="star1-3"></label>
-                            <input type="radio" name="star1" id="star1-4"><label for="star1-4"></label>
-                            <input type="radio" name="star1" id="star1-5"><label for="star1-5"></label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-slide">
-                <div class="testimonial-content">
-                    <div class="testimonialImg-container">
-                        <img class="testimonials-img" src="Images/visvanathan-ent-surgeon.webp" alt="">
-                    </div>
-                    <div class="testimonials-info">
-                        <p class="testimonial-para">
-                            My son was suffering with frequent headache for the past 6 months. He experienced severe pain and swelling below his eyes...
-                        </p>
-                        <div class="box"></div>
-                        <p class="testimonial-name">
-                            Bhuvaneswar, <span class="next-line">Coimbatore</span>
-                        </p>
-                        <div class="rating">
-                            <input type="radio" name="star1" id="star1-1"><label for="star1-1"></label>
-                            <input type="radio" name="star1" id="star1-2"><label for="star1-2"></label>
-                            <input type="radio" name="star1" id="star1-3"><label for="star1-3"></label>
-                            <input type="radio" name="star1" id="star1-4"><label for="star1-4"></label>
-                            <input type="radio" name="star1" id="star1-5"><label for="star1-5"></label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         
-        <!-- Navigation Dots -->
+    
         <div class="testimonial-navigation">
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -656,6 +610,38 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+
+    
+    <script>
+        $(document).ready(function() {
+            let currentSlide = 1; // Start at slide 1
+            const totalSlides = 3; // Number of slides
+            const intervalTime =4000; // Time between slides (in milliseconds)
+        
+            // Function to go to the next slide
+            function goToNextSlide() {
+                currentSlide++;
+                if (currentSlide > totalSlides) {
+                    currentSlide = 1; // Loop back to the first slide
+                }
+        
+                // Automatically check the corresponding radio button for the slide
+                $('#slide' + currentSlide).prop('checked', true);
+            }
+        
+            // Start the autoplay
+            let slideInterval = setInterval(goToNextSlide, intervalTime);
+        
+            // Optional: Pause the autoplay on hover and resume after
+            $('.carousel').hover(function() {
+                clearInterval(slideInterval); // Pause the slideshow
+            }, function() {
+                slideInterval = setInterval(goToNextSlide, intervalTime); // Resume the slideshow
+            });
+        });
+        
+    </script>
     <script>
         
 $(document).ready(function() {if ( $(window).width() < 835 ) {startCarouselyt();} else {$('.profileCarousel').addClass('off');}});    
@@ -694,6 +680,7 @@ items: 3
   owl.addClass('off');
 }
     </script>
+
      <script>
      
         $(document).ready(function() {
@@ -725,6 +712,9 @@ items: 3
                 nav: true,
                 responsive: {
                     0: {
+                        items: 1
+                    },
+                    430: {
                         items: 1
                     },
                     480: {
@@ -926,6 +916,24 @@ items: 3
             });
         });
     </script>
-   
+   <script>
+    $(document).ready(function() {
+        $(".tesimonialscarousel ").owlCarousel({
+         slideSpeed : 500,
+         margin:10,
+         paginationSpeed : 400,
+         autoplay:true,
+         autoplayHoverPause:true,
+         smartSpeed: 600,
+         items : 1,
+         dots: true,
+         itemsDesktop : false,
+         itemsDesktopSmall : false,
+         loop:true,
+         nav:true,
+           
+      })
+    });
+   </script>
 </body>
 </html>
