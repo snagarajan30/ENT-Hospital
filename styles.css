@@ -8,10 +8,11 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    transition: all 0.2s ease-out;
     
 }
 .mainHeader-container{
-    width: 1556px;
+    width: 90%;
     margin:0 auto;
     display: flex;
     align-items: center;
@@ -36,7 +37,7 @@ body{
     cursor: pointer;
     z-index: 1000;
     position: absolute;
-    right: 62px;
+    right: 0px;
     top: 4px;
 }
 
@@ -96,7 +97,7 @@ body{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width:60%;
+    width:70%;
     align-items:center;
     margin-top:40px;
     position: absolute;
@@ -108,7 +109,7 @@ body{
     text-decoration: none;
     color: #1a2751;
     font-family: 'Libre Franklin' ;
-    font-size:12px;
+    font-size:16px;
     font-weight: 600;
     transition: 0.2s all ease-out;
 }
@@ -116,7 +117,7 @@ body{
     color:#e77924;
 }
 .mainBanner-container{
-    width:1556px;
+    width:90%;
     margin:0 auto;
     /* background:url('Images/bann.png'); */
     background-size: cover;
@@ -206,7 +207,7 @@ input[type="radio"] {
 }
 .short-heading{
     color: #ffffff;
-    font-size: 51px;
+    font-size: 50px;
     margin: 0;
     font-weight: 400;
     font-family: 'Libre Franklin';
@@ -214,7 +215,7 @@ input[type="radio"] {
 }
 .heading{
     color: #ffffff;
-    font-size: 76px;
+    font-size: 80px;
     max-width: 277%;
     width: 386px;
     margin: 0;
@@ -224,14 +225,14 @@ input[type="radio"] {
 }
 .banner-contentContainer{
     position: absolute;
-    top: 315px;
-    left: 57px; 
+    top: 314px;
+    left: 88px;
 }
 .bannerBtn-container{
     display: flex;
-    width: 351px;
+    width: auto;
     /* justify-content: space-between; */
-    gap: 18px;
+    gap: 52px;
     margin-top: 60px;
     align-items:center;
 }
@@ -243,10 +244,10 @@ input[type="radio"] {
     border: 1px solid white;
     /* padding: 10px 30px 10px 30px; */
     max-width: 99%;
-    padding: 13px 30px 13px 30px;
+    padding: 13px 20px 13px 20px;
     font-family: 'Libre Franklin';
     letter-spacing: 2px;
-    font-size: 12px;
+    font-size: 16px;
     border-radius:6px;
     transition: 0.2s all ease-out;
 }
@@ -257,11 +258,11 @@ input[type="radio"] {
     text-decoration: none;
     color: #e6dbd4;
     border: 1px solid #40579b;
-    padding: 13px 30px 13px 30px;
+    padding: 13px 20px 13px 20px;
     font-family: 'Libre Franklin';
     background:#40579b;
     letter-spacing: 2px;
-    font-size: 12px;
+    font-size: 16px;
     border-radius:6px;
     transition: 0.2s all ease-out;
 }
@@ -271,7 +272,7 @@ input[type="radio"] {
     background:#ffffff;
 }
 .sectionSecond-container{
-    width: 1296px;
+    width: 90%;
     margin:0 auto;
     display: flex;
     gap:20px;
@@ -289,7 +290,7 @@ input[type="radio"] {
     padding-bottom:30px;
 }
 .section-para{
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.3;
     font-family: 'Libre Franklin';
     color: #6e7691;
@@ -300,7 +301,7 @@ input[type="radio"] {
 }
 .section-heading {
     margin: 0;
-    font-size: 52px;
+    font-size: 57px;
     font-family: 'Libre Baskerville';
     color: #1a2751;
     letter-spacing: -2px;
@@ -308,18 +309,18 @@ input[type="radio"] {
     line-height: 1;
 }
 .sectionSecond-img{
-    height: 418px;
-    width: 383px;
+    height: 500px;
+    width: 500px;
 }
 .experience-counting{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 65px 28px 55px 28px;
+    padding: 65px 28px 55px 0px;
 }
 .count-head{
     margin: 0;
-    font-size: 53px;
+    font-size: 62px;
     font-family: 'Libre Baskerville';
     color: #1a2751;
     letter-spacing: -2px;
@@ -345,7 +346,7 @@ input[type="radio"] {
         font-family:'Libre Franklin';;
     background:#449285;
     letter-spacing: 2px;
-    font-size: 12px;
+    font-size: 18px;
     transition: 0.2s all ease-out;
    
 }
@@ -358,7 +359,7 @@ input[type="radio"] {
     padding-bottom:60px;
 }
 .sectionThird-container{
-    width: 1296px;
+    width: 90%;
     margin:0 auto;
     padding:60px 0px 60px 0px;
 
@@ -381,8 +382,10 @@ font-weight: 600;
 }
 .profiles {
     display: flex;
-   gap:51px;
-   padding-top:100px
+   padding-top:100px;
+   margin: 0 auto;
+   width: 90%;
+   justify-content: space-between;
 }
 
 .profile-card {
@@ -393,7 +396,7 @@ font-weight: 600;
     background:#f1f2f7;
     
     text-align: center;
-    flex-basis: 398px;
+    flex-basis: 415px;
     position:relative;
     transition:0.2s all ease-out;
     border:1px solid transparent;
@@ -405,12 +408,12 @@ font-weight: 600;
 
 .profile-image img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     margin-bottom: 15px;
     position: relative;
-    top: -110px;
+    top: -135px;
     margin-bottom: -110px;
     
     
@@ -418,7 +421,7 @@ font-weight: 600;
 
 .doc-name {
     color: #465d9e;
-    font-size: 1.55em;
+    font-size: 1.9em;
     margin: 10px 0 5px;
     font-family: 'Libre Franklin';
     font-weight: 500;
@@ -426,25 +429,26 @@ font-weight: 600;
 
 .title {
     color: #9ba1b1;
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 43px;
     font-weight: 500;
     font-family: 'Libre Franklin';
 }
 
 .doc-content     {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #6e7691;
     margin-bottom: 20px;
    font-family: 'Libre Franklin';
    text-align: left;
    font-weight:500;
+   padding: 0px 20px 0px 20px;
 }
 
 .buttons {
     display: flex;
     justify-content: space-between;
-    padding-top:47px;
+    padding: 47px 20px 0px 20px;
 }
 
 .btn {
@@ -456,6 +460,7 @@ font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s;
     font-family: 'Libre Franklin';
+    font-size: 15px;
 }
 
 .btn.primary {
@@ -472,7 +477,7 @@ font-weight: 600;
     background-color: #162142;
 }
 .sectionFourth-container{
-    width:1296px;
+    width:90%;
     margin: 0 auto;
     padding-top: 60px;
     
@@ -485,20 +490,20 @@ font-weight: 600;
 }
 .head{
     
-        width: 300px;
+    width: 400px;
         position: relative;
         background: #8596c4;
         height: 238px;
     
 }
 .head1{
-    width: 300px;
+    width: 400px;
     position: relative;
     background: #69a89f;
     height: 238px;
 }
 .head2{
-    width: 300px;
+    width: 400px;
     position: relative;
     background: #ed9450;
     height: 238px;
@@ -512,15 +517,17 @@ font-weight: 600;
 }
 .treatmentCarousel.owl-carousel{
     display: flex;
-    justify-content: space-between;
+    gap:31px;
 }
 .noseTreatmentCarousel.owl-carousel.off{
     display: flex;
-    justify-content: space-between;
+    gap:31px;
 }
 .throatTreatmentCarousel.owl-carousel.off{
     display: flex;
-    gap:62px
+    justify-content: space-evenly;
+    gap:31px;
+
 }
 .ear-treatments{
     display: flex;
@@ -543,19 +550,19 @@ font-weight: 600;
     font-weight: 500;
 }
 .treatment-img{
-    width:300px;
+    width:100%;
     object-fit: cover;
     height: 238px;
 }
 .treatments{
-    width:300px;
+    width:32%;
     border:1px solid #efe9e9;
     transition:all 0.2s ease-out;
     cursor:pointer;
 
 }
 .treatments.noses{
-    width:300px;
+    width:32%;
     border:1px solid #efe9e9;
     transition:all 0.2s ease-out;
     cursor:pointer;
@@ -567,10 +574,13 @@ font-weight: 600;
     border-color:#eb9454;
 }
 .treatments.throat{
-    width:300px;
+    width:32%;
     border:1px solid #efe9e9;
     transition:all 0.2s ease-out;
     cursor:pointer;
+}
+.treatments.throat.invisible{
+    visibility: hidden ;
 }
 .treatments.active{
     border-color: #8393c3; /* New border color (blue) when clicked */
@@ -613,7 +623,7 @@ font-weight: 600;
     display: none;
 }
 .testimonials-container{
-    width:1296px;
+    width:80%;
     margin:0 auto;
     position:relative;
     padding-top:20px;
@@ -627,12 +637,12 @@ font-weight: 600;
     background: #dae8e8;
     
     font-family: 'Libre Franklin';
-    padding: 60px 207px 50px 100px;
+    padding: 80px 172px 80px 127px;
     color: #6e7691;
     position: absolute;
-    left: 233px;
-    border-radius: 24px 24px 25px 25px;
-    width: 1000px;
+    left: 296px;
+    border-radius: 40px 24px 25px 40px;
+    width: 77%;
 }
 
 .testimonial-content{
@@ -640,8 +650,11 @@ font-weight: 600;
     align-items:center;
 }
 .testimonials-img{
-    width:300px;
+    width:387px;
     border-radius:50%;
+}
+.testimonial-para{
+    font-size:18px;
 }
 .box{
     background: white;
@@ -660,7 +673,7 @@ font-weight: 600;
 }
 .testimonial-name{
     margin: 0;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1;
     color: #3d8e82;
     font-weight: 600;
@@ -794,7 +807,7 @@ font-weight: 600;
     }
 .blogs-container{
     padding-top:60px;
-    width:1296px;
+    width:90%;
     margin: 0 auto;
     padding-bottom:60px;
 }
@@ -810,33 +823,27 @@ font-weight: 600;
     padding-top: 12px;
     padding-left: 20px;
     font-family:'Libre Franklin' ;
-    font-size: 11px;
+    font-size: 18px;
     color:#6e7691;
 }
 .blog-info{
-    font-size:16px;
+    font-size:20px;
     font-family:'Libre Franklin' ;
     color:#1a2751;
-    margin:0;
-    padding-top:50px;
-    padding-left:20px;
-    padding-right: 20px;
+    
+    margin: 50px 20px 0px 20px;
     font-weight: 600;
 }
 .read-more{
-    padding-left:20px;
-    padding-top:50px;
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom:80px;
+    margin: 50px 0px 80px 20px;
     font-family:'Libre Franklin' ;
     color:#6e7691;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     cursor:pointer;
 }
 .blog-box{
-    width:409px;
+    width:100%;
     transition: all 0.2s ease-out;
     
 }
@@ -877,7 +884,7 @@ footer{
     #eda166 1440px)
 }
 .footer-container{
-    width:1296px;
+    width: 90%;
     margin:0 auto;
     display:flex;
     justify-content: space-between;
@@ -885,7 +892,7 @@ footer{
     padding-bottom:120px;
 }
 .footer-img{
-    width:60%;
+    width:80%;
 }
 .social-mediaLinks{
     list-style: none;
@@ -913,7 +920,7 @@ footer{
     text-decoration: none;
     color:#727b96;
     font-family: 'Libre Franklin';
-    font-size:13px;
+    font-size:16px;
     font-weight:600;   
 }
 .link:hover{
@@ -931,7 +938,7 @@ footer{
     color:#727b96;
     font-family: 'Libre Franklin';
     font-weight:600;
-    font-size:13px;
+    font-size:16px;
     margin-top:19px;
 }
 .footer-phone, .footer-mail{
@@ -976,13 +983,16 @@ li.links4:hover{
 }
 
 
-
+.footerlogo-social{
+    width:25px;
+    height:25px;
+}
 .phone-link, .mail-link{
     text-decoration: none;
     color:#727b96;
     font-weight:600;
     font-family: 'Libre Franklin';
-    font-size:13px;
+    font-size:16px;
 }
 .phone-link:hover, .mail-link:hover{
     text-decoration: underline;
@@ -1004,13 +1014,13 @@ li.links4:hover{
 .copyright-container{
     display: flex;
     justify-content: space-between;
-    width: 1296px;
+    width: 90%;
     margin: 0 auto;
     border-top:3px solid #d4dcf3;
 }
 .copyright, .developed-by{
     color:#606b88;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'Libre Franklin';
     font-weight: 500;
     padding:10px;
@@ -1018,28 +1028,142 @@ li.links4:hover{
 }
 .footer-subContainer {
     display: flex;
- width: 800px;;
+ width: 55%;
     justify-content: space-between;
 }
 .footer-dropdownContainer{
     display: none;
 }
+
+@media(max-width:1540px){
+    .logo-img {
+        width: 300px;
+    }
+    .navbar-link{
+        font-size:14px;
+    }
+    .banner-contentContainer {
+        
+        left: 56px;
+}
+.short-heading{
+    font-size: 45px;
+}
+.heading{
+    font-size:70px;
+}
+.banner-btn1, .banner-btn2{
+    font-size: 14px;
+}
+.sectionSecond-img {
+    height: 430px;
+    width: 430px;
+}
+.section-heading {
+    
+    font-size: 50px;
+}
+.section-para{
+    font-size: 14px;
+}
+.count-head {
+    margin: 0;
+    font-size: 53px;
+}   
+.countings-btn{
+    font-size:13px;
+}
+.profile-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.doc-name {
+     font-size: 1.4em;
+}
+.title{
+    font-size: 0.9em;
+}
+.doc-content {
+    font-size: 0.75em;
+}
+
+.profile-card {
+    
+    flex-basis: 382px;
+}
+.btn{
+    font-size: 13px;
+}
+.testimonials-img {
+    width: 350px;
+}
+.testimonials-info{
+    padding: 50px 172px 50px 127px;
+}
+.testimonial-para {
+    font-size: 15px;
+}
+.testimonial-name {
+    font-size: 13px;
+}
+.blog-date {
+    font-size: 14px;
+}
+.blog-info {
+    font-size: 16px;
+}
+.read-more {
+    font-size: 14px;
+}
+}
+
+@media(max-width:1441px){
+    .bannerBtn-container {
+        gap: 35px;
+    }
+    .profile-card {
+        flex-basis: 365px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .link {
+         font-size: 14px;
+       
+    }
+    .footer-addr {
+        font-size: 14px;  
+    }
+    .phone-link, .mail-link {
+        font-size: 14px;
+    }
+    .copyright, .developed-by {
+    
+        font-size: 12px;
+        
+    }
+    
+}
+
+
+
 @media(max-width:1310px){
     .mainHeader-container {
-        width: 1220px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     .mainBanner-container {
-        width: 1220px;
+        width: 90%;
         margin: 0 auto;
         background-size: cover;
         position: relative;
     }
     .sectionSecond-container {
-        width: 1220px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -1049,38 +1173,58 @@ li.links4:hover{
         position: relative;
     }
     .sectionThird-container {
-        width: 1220px;
+        width: 90%;
         margin: 0 auto;
         padding: 60px 0px 60px 0px;
     }
     .sectionFourth-container {
-        width: 1220px;
+        width: 90%;
         margin: 0 auto;
         padding-top: 60px;
     }
+    .profile-card {
+        flex-basis: 329px;
+    }
+    .btn {
+        
+        padding: 9px 13px;
+    }   
     .ear, .nose {
         position: relative;
-        right: -121px;
+        right: -179px;
         transform: scaleX(-1);
     }
     .throat-icon{
         position: relative;
-        right: -97px;
+        right: -160px;
+    }
+    .banner-contentContainer {
+        left: 56px;
+        top: 225px;
+    }
+    .short-heading {
+        font-size: 40px;
+    }
+    .heading {
+        font-size: 63px;
+    }
+    .bannerBtn-container {
+        gap: 29px;
     }
     .head1 {
-        width: 300px;
+        width: 400px;
         position: relative;
         background: #69a89f;
         height: 238px;
     }
     .head2{
-        width: 281px;
+        width: 400px;
         position: relative;
         background: #ed9450;
         height: 238px;
     }
     .testimonials-container {
-        width: 1220px;
+        width:90%;
         margin: 0 auto;
         position: relative;
         padding-top: 20px;
@@ -1099,12 +1243,12 @@ li.links4:hover{
     }
     .blogs-container {
         padding-top: 60px;
-        width: 1219px;
+        width:90%;
         margin: 0 auto;
         padding-bottom: 60px;
     }
     .footer-container {
-        width: 1220px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -1114,7 +1258,7 @@ li.links4:hover{
     .copyright-container {
         display: flex;
         justify-content: space-between;
-        width: 1220px;
+        width: 90%;
         margin: 0 auto;
         border-top: 3px solid #d4dcf3;
     }
@@ -1122,20 +1266,20 @@ li.links4:hover{
 }
 @media(max-width:1240px){
     .mainHeader-container {
-        width: 1140px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     .mainBanner-container {
-        width: 1140px;
+        width: 90%;
         margin: 0 auto;
         background-size: cover;
         position: relative;
     }
     .sectionSecond-container {
-        width: 1140px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -1145,34 +1289,51 @@ li.links4:hover{
         position: relative;
     }
     .sectionThird-container {
-        width: 1140px;
+        width: 90%;
         margin: 0 auto;
         padding: 60px 0px 60px 0px;
     }
+    .profile-card {
+        flex-basis: 316px;
+    }
     .treatments {
-        width: 270px;
+        width: 32%;
         border: 1px solid #efe9e9;
         transition: all 0.2s ease-out;
         cursor: pointer;
     }
+    .btn {
+        padding: 9px 9px;
+    }
+    .testimonials-img {
+        width: 297px;
+    }
+    .blog-info {
+        margin: 50px 16px 0px 16px;
+    }
+    .footer-subContainer {
+        display: flex;
+        width: 57%;
+    }
+    
     .treatment-img {
         width: 100%;
         object-fit: cover;
         height: 238px;
     }
     .treatments.noses {
-        width: 270px;
+        width: 32%;
         border: 1px solid #efe9e9;
         transition: all 0.2s ease-out;
         cursor: pointer;
     } 
     .sectionFourth-container {
-        width: 1140px;
+        width:90%;
         margin: 0 auto;
         padding-top: 60px;
     }
     .treatments.throat {
-        width: 270px;
+        width: 32%;
         border: 1px solid #efe9e9;
         transition: all 0.2s ease-out;
         cursor: pointer;
@@ -1199,7 +1360,7 @@ li.links4:hover{
         width: 903px;
     }
     .testimonials-container {
-        width: 1140px;
+        width:90%;
         margin: 0 auto;
         position: relative;
         padding-top: 20px;
@@ -1219,12 +1380,12 @@ li.links4:hover{
     }
     .blogs-container {
         padding-top: 60px;
-        width: 1140px;
+        width:90%;
         margin: 0 auto;
         padding-bottom: 60px;
     }
     .footer-container {
-        width: 1140px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -1234,7 +1395,7 @@ li.links4:hover{
     .copyright-container {
         display: flex;
         justify-content: space-between;
-        width: 1140px;
+        width: 90%;
         margin: 0 auto;
         border-top: 3px solid #d4dcf3;
     }
@@ -1242,14 +1403,14 @@ li.links4:hover{
 }
 @media(max-width:1162px){
     .mainHeader-container {
-        width: 1070px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     .mainBanner-container {
-        width: 1070px;
+        width: 90%;
         margin: 0 auto;
         background-size: cover;
         position: relative;
@@ -1259,6 +1420,10 @@ li.links4:hover{
         top: 238px;
         left: 46px;
     }
+    .profiles {
+        width: 96%;
+    }
+   
     .short-heading {
         color: #e6dbd4;
         font-size: 40px;
@@ -1266,6 +1431,18 @@ li.links4:hover{
         font-weight: 400;
         font-family: 'Libre Franklin';
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .head {
+        width: 300px;
+        position: relative;
+        background: #8596c4;
+        height: 238px;
+    }
+    .head1 {
+        width: 300px;
+        position: relative;
+        background: #69a89f;
+        height: 238px;
     }
     .heading {
         color: #e6dbd4;
@@ -1286,7 +1463,7 @@ li.links4:hover{
         align-items: center;
     }
     .sectionSecond-container {
-        width: 1070px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -1337,7 +1514,7 @@ li.links4:hover{
         width: 383px;
     }
     .sectionThird-container {
-        width: 1070px;
+        width: 90%;
         margin: 0 auto;
         padding: 60px 0px 60px 0px;
     }
@@ -1377,19 +1554,19 @@ li.links4:hover{
         border: 1px solid #657aaf;
         border-radius: 5px;
         color: #657aaf;
-        padding: 10px 20px;
+        padding: 9px 10px;
         cursor: pointer;
         transition: background-color 0.3s;
         font-family: 'Libre Franklin';
         font-size: 12px;
     }
     .sectionFourth-container {
-        width: 1070px;
+        width:90%;
         margin: 0 auto;
         padding-top: 60px;
     }
     .head2 {
-        width: 265px;
+        width: 300px;
         position: relative;
         background: #ed9450;
         height: 238px;
@@ -1399,7 +1576,7 @@ li.links4:hover{
         right: -132px;
     }
     .testimonials-container {
-        width: 1070px;
+        width:90%;
         margin: 0 auto;
         position: relative;
         padding-top: 20px;
@@ -1440,7 +1617,7 @@ li.links4:hover{
     }
     .blogs-container {
         padding-top: 60px;
-        width: 1040px;
+        width:90%;
         margin: 0 auto;
         padding-bottom: 60px;
     }
@@ -1450,9 +1627,7 @@ li.links4:hover{
         font-family: 'Libre Franklin';
         color: #1a2751;
         margin: 0;
-        padding-top: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin: 50px 16px 0px 16px;
         font-weight: 600;
     }
     .read-more {
@@ -1482,7 +1657,7 @@ li.links4:hover{
         z-index: 2;
     }
     .footer-container {
-        width: 1070px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -1492,7 +1667,7 @@ li.links4:hover{
     .copyright-container {
         display: flex;
         justify-content: space-between;
-        width: 1070px;
+        width: 90%;
         margin: 0 auto;
         border-top: 3px solid #d4dcf3;
     }
@@ -1500,7 +1675,7 @@ li.links4:hover{
 }
 @media(max-width:1078px){
     .mainHeader-container {
-        width: 985px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -1511,16 +1686,38 @@ li.links4:hover{
         padding-top: 10px;
     }
     .mainBanner-container {
-        width: 985px;
+        width: 90%;
         margin: 0 auto;
         background-size: cover;
         position: relative;
     }
     .banner-contentContainer {
         position: absolute;
-        top: 238px;
+        top: 195px;
         left: 33px;
     }
+    .section-heading {
+        margin: 0;
+        font-size: 44px;
+    }
+    .profile-card {
+        flex-basis: 284px;
+    }
+    .doc-content {
+        font-size: 0.75em;
+    }
+
+
+.doc-content {
+    padding: 0px 15px 0px 15px;
+}
+.buttons {
+ 
+    padding: 47px 15px 0px 15px;
+}
+.btn {
+    padding: 10px 10px;
+}
     .heading {
         color: #e6dbd4;
         font-size: 60px;
@@ -1548,7 +1745,7 @@ li.links4:hover{
         align-items: center;
     }
     .sectionSecond-container {
-        width: 985px;
+       width: 90%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -1571,7 +1768,7 @@ li.links4:hover{
         width: 373px;
     }
     .sectionThird-container {
-        width: 985px;
+        width: 90%;
         margin: 0 auto;
         padding: 60px 0px 60px 0px;
     }
@@ -1580,14 +1777,14 @@ li.links4:hover{
         border: 1px solid #657aaf;
         border-radius: 5px;
         color: #657aaf;
-        padding: 10px 20px;
+        padding: 10px 10px;
         cursor: pointer;
         transition: background-color 0.3s;
         font-family: 'Libre Franklin';
         font-size: 11px;
     }
     .sectionFourth-container {
-        width: 985px;
+        width:90%;
         margin: 0 auto;
         padding-top: 60px;
     }   
@@ -1609,7 +1806,7 @@ li.links4:hover{
         font-size: 14px;
     }
     .head2 {
-        width: 240px;
+        width: 300px;
         position: relative;
         background: #ed9450;
         height: 238px;
@@ -1622,14 +1819,14 @@ li.links4:hover{
     }
     .ear, .nose {
         position: relative;
-        right: -153px;
+        right: -139px;
         transform: scaleX(-1);
         width: 100px;
         height: 100px;
     }
     .throat-icon {
         position: relative;
-        right: -139px;
+        right: -122px;
         width: 100px;
         height: 100px;
 
@@ -1645,7 +1842,7 @@ li.links4:hover{
         margin-top: 34px;
     }
     .testimonials-container {
-        width: 985px;
+        width:90%;
         margin: 0 auto;
         position: relative;
         padding-top: 20px;
@@ -1701,7 +1898,7 @@ li.links4:hover{
     }
     .blogs-container {
         padding-top: 60px;
-        width: 985px;
+        width:90%;
         margin: 0 auto;
         padding-bottom: 60px;
     }
@@ -1732,7 +1929,7 @@ li.links4:hover{
     }
     
     .footer-container {
-        width: 985px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -1756,7 +1953,7 @@ li.links4:hover{
     .copyright-container {
         display: flex;
         justify-content: space-between;
-        width: 985px;
+        width: 90%;
         margin: 0 auto;
         border-top: 3px solid #d4dcf3;
     }
@@ -1771,7 +1968,7 @@ li.links4:hover{
 }
 @media(max-width:999px){
         .mainHeader-container {
-        width: 900px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -1781,7 +1978,7 @@ li.links4:hover{
         display: none;
     }
         .mainBanner-container {
-        width: 900px;
+            width: 90%;
         margin: 0 auto;
         background-size: cover;
         position: relative;
@@ -1793,6 +1990,9 @@ li.links4:hover{
         font-weight: 400;
         font-family: 'Libre Franklin';
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .head {
+        width: 279px;
     }
         .heading {
         color: #e6dbd4;
@@ -1853,7 +2053,7 @@ li.links4:hover{
     z-index: 1;
 }
     .sectionSecond-container {
-        width: 900px;
+       width: 90%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -1892,7 +2092,7 @@ li.links4:hover{
     margin: 0;
 }
     .sectionThird-container {
-        width: 900px;
+        width: 90%;
         margin: 0 auto;
         padding: 60px 0px 60px 0px;
     }
@@ -1944,7 +2144,7 @@ li.links4:hover{
         font-family: 'Libre Franklin';
     }
         .sectionFourth-container {
-        width: 900px;
+            width:90%;
         margin: 0 auto;
         padding-top: 60px;
     }
@@ -1960,20 +2160,28 @@ li.links4:hover{
     }
     .ear, .nose {
         position: relative;
-        right: -211px;
+        right: -194px;
         transform: scaleX(-1);
         width: 100px;
         height: 100px;
     }
+    .head1 {
+        width: 279px;
+    }
     .head2 {
-        width: 300px;
+        width: 279px;
         position: relative;
         background: #ed9450;
         height: 238px;
     }
+    .footer-subContainer {
+        display: flex;
+        width: 57%;
+        gap: 37px;
+    }
     .throat-icon {
         position: relative;
-        right: -200px;
+        right: -179px;
         width: 100px;
         height: 100px;
     }
@@ -1984,7 +2192,7 @@ li.links4:hover{
         cursor: pointer;
     }
     .testimonials-container {
-        width: 900px;
+        width:90%;
         margin: 0 auto;
         position: relative;
         padding-top: 20px;
@@ -2028,7 +2236,7 @@ li.links4:hover{
     }
     .blogs-container {
         padding-top: 60px;
-        width: 900px;
+        width: 90%;
         margin: 0 auto;
         padding-bottom: 60px;
     }
@@ -2036,7 +2244,7 @@ li.links4:hover{
         height: 32.2%;
     }
     .footer-container {
-        width: 900px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -2047,7 +2255,7 @@ li.links4:hover{
     .copyright-container {
         display: flex;
         justify-content: space-between;
-        width: 900px;
+        width: 90%;
         margin: 0 auto;
         border-top: 3px solid #d4dcf3;
     }
@@ -2065,7 +2273,7 @@ li.links4:hover{
 }
 @media(max-width:908px){
     .mainHeader-container {
-        width: 830px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -2088,7 +2296,7 @@ li.links4:hover{
         top: -2px;
     }
     .mainBanner-container {
-        width: 830px;
+        width: 90%;
         margin: 0 auto;
         background-size: cover;
         position: relative;
@@ -2125,7 +2333,7 @@ li.links4:hover{
         left: 28px;
     }
     .sectionSecond-container {
-        width: 830px;
+      width: 90%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -2180,7 +2388,7 @@ li.links4:hover{
         transition: 0.2s all ease-out;
     }
     .sectionThird-container {
-        width: 830px;
+        width: 90%;
         margin: 0 auto;
         padding: 60px 0px 60px 0px;
     }
@@ -2212,7 +2420,7 @@ li.links4:hover{
         font-size: 8px;
     }
     .sectionFourth-container {
-        width: 830px;
+        width:90%;
         margin: 0 auto;
         padding-top: 60px;
     }
@@ -2252,7 +2460,7 @@ li.links4:hover{
         height: 100px;
     }
     .testimonials-container {
-        width: 830px;
+        width:90%;
         margin: 0 auto;
         position: relative;
         padding-top: 20px;
@@ -2297,7 +2505,7 @@ li.links4:hover{
     }
     .blogs-container {
         padding-top: 60px;
-        width: 830px;
+        width: 90%;
         margin: 0 auto;
         padding-bottom: 80px;
     }
@@ -2329,7 +2537,7 @@ li.links4:hover{
         padding-top: 34px;
     }
     .footer-container {
-        width: 830px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         flex-wrap:wrap;
@@ -2371,7 +2579,7 @@ li.links4:hover{
     .copyright-container {
         display: flex;
         justify-content: space-between;
-        width: 830px;
+        width: 90%;
         margin: 0 auto;
         border-top: 3px solid #d4dcf3;
     }
@@ -2386,7 +2594,7 @@ li.links4:hover{
 }
 @media(max-width:835px){
     .mainHeader-container {
-        width: 755px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -2397,7 +2605,7 @@ li.links4:hover{
         padding-top: 10px;
     }
     .mainBanner-container {
-        width: 755px;
+        width: 90%;
         margin: 0 auto;
         background-size: cover;
         position: relative;
@@ -2426,7 +2634,7 @@ li.links4:hover{
         left: 22px;
     }
     .sectionSecond-container {
-        width: 755px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -2475,7 +2683,7 @@ li.links4:hover{
         padding-bottom: 50px;
     }
     .sectionThird-container {
-        width: 755px;
+        width: 90%;
         margin: 0 auto;
         padding: 50px 0px 60px 0px;
     }
@@ -2556,7 +2764,7 @@ li.links4:hover{
             width: 122px;
             height: 43px;}
     .sectionFourth-container {
-        width: 755px;
+        width:90%;
         margin: 0 auto;
         padding-top: 60px;
     }
@@ -2652,7 +2860,7 @@ li.links4:hover{
         width: 724px;
     } */
     .testimonials-container {
-        width: 755px;
+        width:90%;
         margin: 0 auto;
         position: relative;
         padding-top: 20px;
@@ -2691,7 +2899,7 @@ li.links4:hover{
     }
     .blogs-container {
         padding-top: 60px;
-        width: 755px;
+        width: 90%;
         margin: 0 auto;
         padding-bottom: 80px;
     }
@@ -2699,7 +2907,7 @@ li.links4:hover{
         height: 28.5%;
     }
     .footer-container {
-        width: 755px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -2711,7 +2919,7 @@ li.links4:hover{
     .copyright-container {
         display: flex;
         justify-content: space-between;
-        width: 755px;
+        width: 90%;
         margin: 0 auto;
         border-top: 3px solid #d4dcf3;
     }
@@ -2789,14 +2997,14 @@ li.links4:hover{
     
 @media(max-width:768px){
     .mainHeader-container {
-        width: 670px;
+        width: 90%px;
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     .mainBanner-container {
-        width: 670px;
+        width: 90%;
         margin: 0 auto;
         background-size: cover;
         position: relative;
@@ -2849,7 +3057,7 @@ li.links4:hover{
         left: 11px;
     }
     .sectionSecond-container {
-        width: 670px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -2908,7 +3116,7 @@ li.links4:hover{
         transition: 0.2s all ease-out;
     }
     .sectionThird-container {
-        width: 670px;
+        width: 90%;
         margin: 0 auto;
         padding: 50px 0px 60px 0px;
     }
@@ -2968,7 +3176,7 @@ li.links4:hover{
         font-size: 12px;
     }
     .sectionFourth-container {
-        width: 670px;
+        width:90%;
         margin: 0 auto;
         padding-top: 60px;
     }
@@ -3065,7 +3273,7 @@ li.links4:hover{
         cursor: pointer;
     }
     .testimonials-container {
-        width: 670px;
+        width:90%;
         margin: 0 auto;
         position: relative;
         padding-top: 20px;
@@ -3095,12 +3303,12 @@ li.links4:hover{
 
     }
     .blogs-container {
-        width: 670px;
+        width: 90%;
         padding-bottom: 50px;
    
     }
     .footer-container {
-        width: 670px;
+        width: 90%;
         display: block;
         padding-bottom: 20px;
     }
@@ -3111,7 +3319,7 @@ li.links4:hover{
     width: 100%;
    }
    .copyright-container{
-    width: 670px;
+    width: 90%;
    }
    .copyright, .developed-by{
     padding-bottom:0px;
@@ -3119,13 +3327,13 @@ li.links4:hover{
 }
 @media(max-width:675px){
     .mainHeader-container {
-        width: 570px;
+        width: 90%;
     }
     .logo-img {
         width: 220px;
     }
     .mainBanner-container {
-        width: 570px;
+        width: 90%;
     }
     .hamburger{
         top: -4px;
@@ -3146,7 +3354,7 @@ li.links4:hover{
         padding:13px 10px 13px 10px;
     }
     .sectionSecond-container {
-        width: 570px;
+        width: 90%;
         flex-direction: column;
         gap: 45px;
     }
@@ -3174,7 +3382,7 @@ li.links4:hover{
             font-size: 14px;
         }
         .sectionThird-container {
-            width: 570px;
+            width: 90%;
         }
         .profile-image img{
             right: -34px;
@@ -3199,10 +3407,10 @@ li.links4:hover{
             width: 320px;
         }
         .sectionFourth-container {
-            width: 570px;
+            width:90%;
         }
         .testimonials-container {
-            width: 570px;
+            width:90%;
         }
         .treatments {
             width: 185px !important;
@@ -3250,14 +3458,14 @@ li.links4:hover{
             right: -451px;
         }
         .blogs-container {
-            width: 570px;
+            width: 90%;
         }
         .blogCarousel .owl-nav {
           
             bottom: -31px;
         }
         .footer-container{
-            width:570px;
+            width: 90%;
         }
         .footer-subContainer {
             display: flex;
@@ -3273,15 +3481,15 @@ li.links4:hover{
             margin-top: 20px; /* Optional: Adds some space between the previous row and the last div */
         }
         .copyright-container {
-            width: 570px;
+            width: 90%;
         }
 }
 @media(max-width:584px){
     .mainHeader-container {
-        width: 485px;
+        width: 90%;
     }
     .mainBanner-container {
-        width: 485px;
+        width: 90%;
     }
     .short-heading {
         font-size: 17px;
@@ -3301,10 +3509,10 @@ li.links4:hover{
         top: 89px;
     }
     .sectionSecond-container {
-        width: 485px;
+        width: 90%;
     }
     .sectionThird-container {
-        width: 485px;
+        width: 90%;
     }
     .profileCarousel.owl-carousel .owl-item img{
         width: 150px !important;
@@ -3328,10 +3536,10 @@ li.links4:hover{
         font-size: 10px;
     }
     .sectionFourth-container {
-        width: 485px;
+        width:90%;
     }
     .testimonials-container {
-        width: 485px;
+        width:90%;
     }
     .ear-treatments {
         grid-template-columns: 1fr;
@@ -3361,16 +3569,16 @@ li.links4:hover{
 
     }
     .blogs-container {
-        width: 485px;
+        width: 90%;
     }
     .footer-container {
-        width: 485px;
+        width: 90%;
     }
     .footer-subContainer{
         width: 80%;
     }
     .copyright-container {
-        width: 485px;
+        width: 90%;
     }
     .copyright, .developed-by {
       
@@ -3379,7 +3587,7 @@ li.links4:hover{
 }
 @media(max-width:495px){
     .mainHeader-container {
-        width: 410px;
+        width: 90%;
     }
     .logo-img {
         width: 201px;
@@ -3389,7 +3597,7 @@ li.links4:hover{
         height: 26px;
     }
     .mainBanner-container {
-        width: 410px;
+        width: 90%;
     }
     .short-heading {
         font-size: 15px;
@@ -3402,7 +3610,7 @@ li.links4:hover{
     }
     .sectionSecond-container{
         padding-top: 50px;
-        width:410px;
+        width: 90%;
     }
     .sectionSecond-img {
         height: 290px;
@@ -3416,7 +3624,7 @@ li.links4:hover{
         padding-bottom: 50px;
     }
     .sectionThird-container {
-        width:410px;
+        width: 90%;
     }
     .profileCarousel.owl-carousel .owl-item img {
         right: -108px;
@@ -3434,7 +3642,7 @@ li.links4:hover{
         font-size: 0.9em;
     }
     .sectionFourth-container {
-        width: 410px;
+        width:90%;
     }
     .treatments {
         width: 196px !important;
@@ -3455,7 +3663,7 @@ li.links4:hover{
             padding-bottom: 30px;
         }
         .testimonials-container {
-            width: 410px;
+            width:90%;
             padding-bottom: 50px;
             
         }
@@ -3473,7 +3681,7 @@ li.links4:hover{
             top: 394px;
         }
         .blogs-container {
-            width: 410px;
+            width: 90%;
         }
         .blog-date {
             font-size: 16px;
@@ -3485,7 +3693,7 @@ li.links4:hover{
             font-size:13px;
         }
         .footer-container {
-            width: 410px;
+            width: 90%;
             padding-bottom: 0px;
         }
         .footer-subContainer > div:nth-child(1) {
@@ -3528,18 +3736,24 @@ li.links4:hover{
         gap: 7px;
         }
         .copyright-container {
-            width: 410px;
+            width: 90%;
         }
 }
-@media(max-width:430px){
+@media(max-width:481px){
     .mainHeader-container {
-        width: 365px;
+        width: 90%;
     }
     .logo-img {
         width: 190px;
     }
+    .carousel-item img {
+        width: 100%;
+        display: block;
+        height: 308px;
+        object-fit: cover;
+    }
     .mainBanner-container {
-        width: 365px;
+        width: 90%;
         margin: 0 auto;
     }
     .banner-contentContainer {
@@ -3547,20 +3761,20 @@ li.links4:hover{
     }
     .sectionSecond-container {
         padding-top: 50px;
-        width: 365px;
+        width: 90%;
     }
     .section-heading {
         margin: 0;
         font-size: 33px;
     }
     .sectionThird-container {
-        width: 365px;
+        width: 90%;
     }
     .profileCarousel.owl-carousel .owl-item img {
         right: -93px;
     }
     .sectionFourth-container {
-        width: 365px;
+        width:90%;
     }
     
     .treatments {
@@ -3583,7 +3797,7 @@ li.links4:hover{
         font-size: 15px;
     }
     .testimonials-container {
-        width: 366px;
+        width:90%;
     }
     .testimonials-info {
         padding: 125px 49px 17px 49px;
@@ -3596,7 +3810,7 @@ li.links4:hover{
         width: 143px;
     } */
     .blogs-container {
-        width: 365px;
+        width: 90%;
     }
     .blank-container {
         display: none;
@@ -3605,7 +3819,7 @@ li.links4:hover{
         padding-bottom: 50px;
     }
     .footer-container {
-        width: 365px;
+        width: 90%;
     }
     .footer-subContainer {
         display: none;
@@ -3705,14 +3919,14 @@ li.links4:hover{
         display: inline;
     }
     .copyright-container {
-        width: 365px;
+        width: 90%;
         display: block;
         text-align: center;
     }
 }
 @media(max-width:380px){
     .mainHeader-container {
-        width: 310px;
+        width: 90%;
     }
     .logo-img {
         width: 165px;
@@ -3722,7 +3936,7 @@ li.links4:hover{
         height: 20px;
     }
     .mainBanner-container {
-        width: 310px;
+        width: 90%;
         margin: 0 auto;
     }
     .next-line {
@@ -3730,7 +3944,7 @@ li.links4:hover{
     }
     .sectionSecond-container {
         padding-top: 50px;
-        width: 310px;
+        width: 90%;
     }
     .section-heading {
         margin: 0;
@@ -3743,7 +3957,7 @@ li.links4:hover{
         font-size: 12px;
     }
     .sectionThird-container {
-        width: 310px;
+        width: 90%;
         padding: 50px 0px 30px 0px;
     }
     .profileCarousel.owl-carousel .owl-item img {
@@ -3762,7 +3976,7 @@ li.links4:hover{
         font-size: 11px;
     }
     .sectionFourth-container {
-        width: 310px;
+        width:90%;
         padding-top: 40px;
     }
     .ear-treatments{
@@ -3770,7 +3984,7 @@ li.links4:hover{
         padding-bottom:20px;
     }
     .testimonials-container {
-        width: 310px;
+        width:90%;
     }
     .testimonials-info {
         padding: 125px 49px 17px 49px;
@@ -3783,7 +3997,7 @@ li.links4:hover{
         right: 34%;
     }
     .blogs-container {
-        width: 310px;
+        width: 90%;;
         padding-top: 40px;
     }
     .quickLink-heading, .treatment-heading, .reachUs-heading {
@@ -3793,14 +4007,14 @@ li.links4:hover{
         font-size: 14px;
     }
     .footer-container {
-        width: 310px;
+        width: 90%;
         padding-top: 20px;
     }
     .footer-dropdownContainer {
         width: 310px;
     }
     .copyright-container {
-        width: 310px;
+        width: 90%;
         padding-bottom:25px;
 
     }  
@@ -3810,10 +4024,10 @@ li.links4:hover{
 }
 @media(max-width:321px){
     .mainHeader-container {
-        width: 280px;
+        width: 90%;
     }
     .mainBanner-container {
-        width: 280px;
+        width: 90%;
     }
     .banner-btn1, .banner-btn2 {
         
@@ -3824,7 +4038,7 @@ li.links4:hover{
     }
     .sectionSecond-container {
         padding-top: 40px;
-        width: 280px;
+        width: 90%;
     }
     .sectionSecond-img {
         height: 240px;
@@ -3842,7 +4056,7 @@ li.links4:hover{
         letter-spacing: 1px;
     }
     .sectionThird-container {
-        width: 280px;
+        width: 90%;
         padding: 50px 0px 30px 0px;
     }
     .profileCarousel.owl-carousel .owl-item img {
@@ -3859,11 +4073,11 @@ li.links4:hover{
 
     }
     .sectionFourth-container {
-        width: 280px;
+        width:90%;
         padding-top: 40px;
     }
     .testimonials-container {
-        width: 280px;
+        width:90%;
     }
     .testimonials-info{
         top: -91px;
@@ -3882,7 +4096,7 @@ li.links4:hover{
         top:10px;
     }
     .blogs-container {
-        width: 280px;
+        width: 90%;
         padding-top: 40px;
     }
     .blog-date {
@@ -3899,7 +4113,7 @@ li.links4:hover{
         height: 15px;
     }
     .footer-container {
-        width: 280px;
+        width: 90%;
         padding-top: 20px;
     }
     .footer-img {
@@ -3909,7 +4123,7 @@ li.links4:hover{
         width: 280px;
     }
     .copyright-container {
-        width: 280px;
+        width: 90%;
         padding-bottom: 25px;
     }
 
