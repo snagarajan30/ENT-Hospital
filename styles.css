@@ -802,7 +802,7 @@ font-weight: 600;
     .blog-content{
         display: flex;
         gap: 36px;
-        padding-top:10px;
+        padding-top:20px;
 
     }
 .blogs-container{
@@ -1129,18 +1129,18 @@ li.links4:hover{
         font-size: 12px;
     }
     .link {
-         font-size: 14px;
+         font-size: 12px;
        
     }
     .footer-addr {
-        font-size: 14px;  
+        font-size: 12px;  
     }
     .phone-link, .mail-link {
-        font-size: 14px;
+        font-size: 12px;
     }
     .copyright, .developed-by {
     
-        font-size: 12px;
+        font-size: 11px;
         
     }
     
@@ -1196,7 +1196,7 @@ li.links4:hover{
     }
     .throat-icon{
         position: relative;
-        right: -160px;
+        right: -55%;
     }
     .banner-contentContainer {
         left: 56px;
@@ -1573,7 +1573,7 @@ li.links4:hover{
     }
     .throat-icon {
         position: relative;
-        right: -132px;
+        right: -42%;
     }
     .testimonials-container {
         width:90%;
@@ -1826,7 +1826,7 @@ li.links4:hover{
     }
     .throat-icon {
         position: relative;
-        right: -122px;
+        right: -50%;
         width: 100px;
         height: 100px;
 
@@ -2036,10 +2036,11 @@ li.links4:hover{
 .nav-button {
     width: 16px;
     height: 16px;
-    background-color: white;
+    background-color: #c5c5c5;
+    ;
     transform: rotate(45deg);
     cursor: pointer;
-    border: 2px solid #1a2851;
+    
     transition: background-color 0.3s;
 }
 .navigation {
@@ -3541,6 +3542,21 @@ li.links4:hover{
     .testimonials-container {
         width:90%;
     }
+    .head {
+        width: auto;
+    }
+    .head1 {
+        width: auto;
+    }
+    .head2 {
+        width: auto;
+    }
+    .ear  {
+        right: -86%;
+    }
+    .nose, .throat-icon{
+        right:-55%;
+    }
     .ear-treatments {
         grid-template-columns: 1fr;
     }
@@ -3600,10 +3616,10 @@ li.links4:hover{
         width: 90%;
     }
     .short-heading {
-        font-size: 15px;
+        font-size: 20px;
     }
     .heading {
-        font-size: 22px;
+        font-size: 30px;
     }
     .bannerBtn-container {
         margin-top: 15px;
@@ -3613,12 +3629,17 @@ li.links4:hover{
         width: 90%;
     }
     .sectionSecond-img {
-        height: 290px;
-        width: 290px;
+        height: 250px;
+        width: 250px;
     }
+   
     .section-heading {
         margin: 0;
         font-size: 36px;
+        line-height: 1.1;
+    }
+    .experience-counting{
+        padding: 45px 28px 45px 0px;
     }
     .second {
         padding-bottom: 50px;
@@ -3643,6 +3664,9 @@ li.links4:hover{
     }
     .sectionFourth-container {
         width:90%;
+    }
+    .ear-treatments{
+        margin-top: 20px;
     }
     .treatments {
         width: 196px !important;
@@ -3757,7 +3781,7 @@ li.links4:hover{
         margin: 0 auto;
     }
     .banner-contentContainer {
-        top: 49px;
+        top: 119px;
     }
     .sectionSecond-container {
         padding-top: 50px;
@@ -3776,18 +3800,28 @@ li.links4:hover{
     .sectionFourth-container {
         width:90%;
     }
+    .ear {
+        right: -83%;
+    }
     
     .treatments {
-        width: 365px !important;
+        width: 100% !important;
     }
+   
     .treatmentCarousel.owl-carousel .owl-item img {
-        width: 365px !important;
+        width: 100% !important;
+        height:240px;
     }
     .noseTreatmentCarousel.owl-carousel .owl-item img {
-        width: 365px !important;
+        width: 100% !important;
+        height:240px;
     }
     .throatTreatmentCarousel.owl-carousel .owl-item img {
-        width: 365px !important;
+        width: 100% !important;
+        height:240px;
+    }
+    .nose, .throat-icon {
+        right: -26%;
     }
     .treatment-para{
         padding-top: 50px;
@@ -3916,7 +3950,7 @@ li.links4:hover{
         
     }
     .next-line {
-        display: inline;
+        display: block;
     }
     .copyright-container {
         width: 90%;
@@ -4034,15 +4068,21 @@ li.links4:hover{
         letter-spacing: 1px;
     }
     .banner-contentContainer {
-        top: 27px;
+        top: 119px;
+    }
+    .short-heading {
+        font-size: 18px;
+    }
+    .heading {
+        font-size: 26px;
     }
     .sectionSecond-container {
         padding-top: 40px;
         width: 90%;
     }
     .sectionSecond-img {
-        height: 240px;
-        width: 240px;
+        height: 210px;
+        width: 200px;
     }
     .section-heading {
         margin: 0;
@@ -4069,9 +4109,19 @@ li.links4:hover{
         font-size: 0.7em;
     }
     .btn{
-        padding: 10px 13px;
+        padding: 10px 7px;
 
     }
+    .ear {
+        right: -75%;
+    }
+    .next-line {
+        display: block;
+    }
+    .ear-treatments {
+         padding-top: 0px;
+        }
+
     .sectionFourth-container {
         width:90%;
         padding-top: 40px;
