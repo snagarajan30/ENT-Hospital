@@ -2119,7 +2119,7 @@ li.links4:hover{
         border: 1px solid #657aaf;
         border-radius: 5px;
         color: #657aaf;
-        padding: 10px 20px;
+        padding: 10px 9px;
         cursor: pointer;
         transition: background-color 0.3s;
         font-family: 'Libre Franklin';
@@ -2346,6 +2346,11 @@ li.links4:hover{
         justify-content: space-between;
         position: relative;
     }
+    .title {
+       
+        font-size: 0.67em;
+      
+    }
     .section-heading {
         margin: 0;
         font-size: 37px;
@@ -2407,7 +2412,7 @@ li.links4:hover{
     }
     .doc-name {
         color: #465d9e;
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin: 10px 0 5px;
         font-family: 'Libre Franklin';
         font-weight: 500;
@@ -2417,11 +2422,11 @@ li.links4:hover{
         border: 1px solid #657aaf;
         border-radius: 5px;
         color: #657aaf;
-        padding: 10px 20px;
+        padding: 10px 7px;
         cursor: pointer;
         transition: background-color 0.3s;
         font-family: 'Libre Franklin';
-        font-size: 8px;
+        font-size: 9px;
     }
     .sectionFourth-container {
         width:90%;
@@ -2763,8 +2768,59 @@ li.links4:hover{
         
     }
     .profileCarousel .owl-nav{
-        display: none;
+        position: relative;
     }
+    .profileCarousel .owl-nav .owl-prev{
+        position: absolute;
+        top:-222px;
+    }
+    .profileCarousel .owl-nav .owl-next{
+        position: absolute;
+        top:-222px;
+        right: -0.2%;;
+    }
+    .profileCarousel .owl-nav .owl-prev::before{
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGZpbGw9IiM5YmExYjEiIGQ9Ik02MDkuNDA4IDE0OS4zNzZMMjc3Ljc2IDQ4OS42YTMyIDMyIDAgMCAwIDAgNDQuNjcybDMzMS42NDggMzQwLjM1MmEyOS4xMiAyOS4xMiAwIDAgMCA0MS43MjggMGEzMC41OSAzMC41OSAwIDAgMCAwLTQyLjc1MkwzMzkuMjY0IDUxMS45MzZsMzExLjg3Mi0zMTkuODcyYTMwLjU5IDMwLjU5IDAgMCAwIDAtNDIuNjg4YTI5LjEyIDI5LjEyIDAgMCAwLTQxLjcyOCAwIi8+PC9zdmc+');
+        
+        transition: filter 0.3s ease;
+        color:#9ba1b1;
+    }
+    .profileCarousel .owl-nav .owl-prev::before:hover{
+        background-color:#7e879f;
+    }
+    .profileCarousel .owl-nav .owl-next::before:hover{
+        background-color:#7e879f;
+    }
+    .profileCarousel .owl-nav .owl-next::before{
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGZpbGw9IiM5YmExYjEiIGQ9Ik0zNDAuODY0IDE0OS4zMTJhMzAuNTkgMzAuNTkgMCAwIDAgMCA0Mi43NTJMNjUyLjczNiA1MTJMMzQwLjg2NCA4MzEuODcyYTMwLjU5IDMwLjU5IDAgMCAwIDAgNDIuNzUyYTI5LjEyIDI5LjEyIDAgMCAwIDQxLjcyOCAwTDcxNC4yNCA1MzQuMzM2YTMyIDMyIDAgMCAwIDAtNDQuNjcyTDM4Mi41OTIgMTQ5LjM3NmEyOS4xMiAyOS4xMiAwIDAgMC00MS43MjggMHoiLz48L3N2Zz4=');
+        
+        transition: filter 0.3s ease;
+    }
+        
+    
+    /* .profileCarousel .owl-dots{
+        justify-content: center;
+        align-items: center;
+        right: 252px;
+        display: flex;
+        gap: 9px;
+    }
+    .profileCarousel .owl-dots .owl-dot{
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 20px;
+        height: 4px;
+        width: 21px;
+        background-color: #d0d7d9;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        
+    }
+    .profileCarousel .owl-dots .owl-dot.active{
+        background-color:#333;
+    } */
+    
   
         .box {
             background: white;
@@ -2791,6 +2847,7 @@ li.links4:hover{
     }
     .treatmentCarousel.owl-carousel.owl-loaded.owl-drag{
         display: grid !important;
+        gap:0px;
         
 
     }
@@ -3176,7 +3233,7 @@ li.links4:hover{
         border: 1px solid #657aaf;
         border-radius: 5px;
         color: #657aaf;
-        padding: 10px 20px;
+        padding: 10px 17px;
         cursor: pointer;
         transition: background-color 0.3s;
         font-family: 'Libre Franklin';
@@ -3345,6 +3402,13 @@ li.links4:hover{
     .hamburger{
         top: -4px;
     }
+    .btn {
+        background-color: #e1e5f0;
+        border: 1px solid #657aaf;
+        border-radius: 5px;
+        color: #657aaf;
+        padding: 10px 14px;}
+
     .short-heading {
         font-size: 20px;
     }
