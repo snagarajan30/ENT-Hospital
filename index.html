@@ -144,7 +144,7 @@
                 </div>
             </div>
             <a class="countings-btn" href="#">VIEW MORE</a>
-            <p class="book-appoinment">BOOK APPOINTMENT</p>
+            <a href="#" class="book-appoinment">BOOK APPOINTMENT</a>
         </div>
        
     </div>
@@ -710,7 +710,7 @@ function startCarouselyt(){
      items : 1,
        dots: true,
      loop:true,
-     nav:false,
+     nav:true,
      responsive: {
 0: {
 items: 1
@@ -966,6 +966,14 @@ items: 3
             $('.quickLinks-headingContainer').on('click', function() {
                 $('.footer-dropdown1').toggleClass('active');
                 $('.footersvg1').toggleClass('down');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.hamburger').on('click', function() {
+                $('.hamburger').toggleClass('active');
+                $('.side-menu').toggleClass('active');
             });
         });
     </script>

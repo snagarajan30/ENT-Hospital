@@ -845,6 +845,7 @@ font-weight: 600;
 .blog-box{
     width:100%;
     transition: all 0.2s ease-out;
+    cursor: pointer;
     
 }
 .blog-img{
@@ -999,6 +1000,7 @@ li.links4:hover{
 }
 .book-appoinment{
     position: fixed;
+    text-decoration: none;
     margin: 0px;
     right: -104px;
     transform: rotate(-90deg);
@@ -1644,6 +1646,7 @@ li.links4:hover{
     }
     .book-appoinment {
         position: fixed;
+        text-decoration: none;
         margin: 0px;
         right: -95px;
         transform: rotate(-90deg);
@@ -2733,7 +2736,7 @@ li.links4:hover{
         cursor: pointer;
         transition: background-color 0.3s;
         font-family: 'Libre Franklin';
-        font-size: 8px;
+        font-size: 12px;
     }
     .profile-image img {
         border-radius: 50%;
@@ -2758,6 +2761,9 @@ li.links4:hover{
         overflow: visible !important;
        
         
+    }
+    .profileCarousel .owl-nav{
+        display: none;
     }
   
         .box {
