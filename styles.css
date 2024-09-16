@@ -277,7 +277,7 @@ input[type="radio"] {
     display: flex;
     gap:20px;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 40px;
     justify-content: space-between;
     position:relative;
 }
@@ -356,12 +356,12 @@ input[type="radio"] {
     background:#ffffff;
 }
 .section-second{
-    padding-bottom:60px;
+    padding-bottom:40px;
 }
 .sectionThird-container{
     width: 90%;
     margin:0 auto;
-    padding:60px 0px 60px 0px;
+    padding:40px 0px 40px 0px;
 
 }
 .sectionThird-headingContainer{
@@ -479,7 +479,8 @@ font-weight: 600;
 .sectionFourth-container{
     width:90%;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 40px;
+    padding-bottom:40px;
     
 }
 .sectionFourth-headingContainer{
@@ -869,20 +870,22 @@ font-weight: 600;
 
     height: 80px;
 }
-footer{
-    background:#f6f7fc;
-    border-top: 8px solid;
-    border-image: linear-gradient(to right, 
-    #7488bb 0px, 
-    #7488bb calc(864px - 2px), 
-    white calc(864px - 2px), 
-    white calc(864px + 2px), 
-    #7bb3aa calc(864px + 2px), 
-    #7bb3aa calc(1152px - 2px), 
-    white calc(1152px - 2px), 
-    white calc(1152px + 2px), 
-    #eda166 calc(1152px + 2px), 
-    #eda166 1440px)
+footer {
+    background: #f6f7fc;
+    border-top: 8px solid; /* Defines the thickness of the top border */
+    border-image: linear-gradient(
+        to right,
+        #7488bb 0%,
+        #7488bb 59.86%,
+        white 59.86%,
+        white 60.14%,
+        #7bb3aa 60.14%,
+        #7bb3aa 79.86%,
+        white 79.86%,
+        white 80.14%,
+        #eda166 80.14%,
+        #eda166 100%
+    ) 1;
 }
 .footer-container{
     width: 90%;
@@ -4036,8 +4039,8 @@ li.links4:hover{
         width: 165px;
     }
     .hamburger {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 30px;
     }
     .mainBanner-container {
         width: 90%;
