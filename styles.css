@@ -11,6 +11,25 @@ body{
     transition: all 0.2s ease-out;
     
 }
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    width: 38px;
+    text-indent: -99999px;
+    height: 38px;
+    border-radius: 4px;
+    opacity: .6;
+    background: #107fc9 url('Images/up-scroll.png') no-repeat center;
+}
+.main-header{
+    position: fixed;
+    background-color: white;
+    z-index: 4;
+    width: 100%;
+    
+    padding-bottom: 10px;
+}
+
 .mainHeader-container{
     width: 90%;
     margin:0 auto;
@@ -40,6 +59,9 @@ body{
     right: 0px;
     top: 4px;
 }
+.hamburger:hover ~ .bar {
+    color: red; /* Change this to the color you want */
+}
 
 .bar {
     width: 100%;
@@ -67,8 +89,7 @@ body{
     left: -250px; /* Initially hidden off-screen */
     width: 250px;
     height: 100%;
-    background-color: #333;
-    color: white;
+    background-color: white;
     padding: 20px;
     transition: left 0.3s ease;
     z-index: 999;
@@ -88,10 +109,25 @@ body{
 }
 
 .side-menu ul li a {
-    color: white;
     text-decoration: none;
     font-size: 18px;
+    color: #1a2751;
+    font-family: 'Libre Franklin';
 }
+.treaments-link{
+    max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.treaments-link.down{
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 10px;
+}
+
 
 .navbar-list{
     list-style: none;
@@ -132,7 +168,7 @@ body{
         width: 100%;
         margin: 0 auto;
         overflow: hidden;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
     }
 
     .carousel-content {
@@ -172,7 +208,7 @@ input[type="radio"] {
 /* Diamond Navigation */
 .navigation {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -272,17 +308,17 @@ input[type="radio"] {
     background:#ffffff;
 }
 .sectionSecond-container{
-    width: 90%;
+    width: 85%;
     margin:0 auto;
     display: flex;
     gap:20px;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 60px;
     justify-content: space-between;
     position:relative;
 }
 .sectionSecond-contentConatiner{
-    width: 51%;
+    width: 47%;
 }
 .break-line{
     display: block;
@@ -356,12 +392,12 @@ input[type="radio"] {
     background:#ffffff;
 }
 .section-second{
-    padding-bottom:40px;
+    padding-bottom:60px;
 }
 .sectionThird-container{
     width: 90%;
     margin:0 auto;
-    padding:40px 0px 40px 0px;
+    padding:60px 0px 60px 0px;
 
 }
 .sectionThird-headingContainer{
@@ -396,7 +432,7 @@ font-weight: 600;
     background:#f1f2f7;
     
     text-align: center;
-    flex-basis: 415px;
+    flex-basis: 440px;
     position:relative;
     transition:0.2s all ease-out;
     border:1px solid transparent;
@@ -421,14 +457,14 @@ font-weight: 600;
 
 .doc-name {
     color: #465d9e;
-    font-size: 1.9em;
+    font-size: 1.5em;
     margin: 10px 0 5px;
     font-family: 'Libre Franklin';
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .title {
-    color: #9ba1b1;
+    color: #444f6a;
     font-size: 1.2em;
     margin-bottom: 43px;
     font-weight: 500;
@@ -443,6 +479,8 @@ font-weight: 600;
    text-align: left;
    font-weight:500;
    padding: 0px 20px 0px 20px;
+   word-spacing: 1.5px;
+    line-height: 1.4;
 }
 
 .buttons {
@@ -479,12 +517,13 @@ font-weight: 600;
 .sectionFourth-container{
     width:90%;
     margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom:40px;
+    padding-top: 60px;
+    
     
 }
 .sectionFourth-headingContainer{
     text-align: center;
+    padding-bottom:40px;
 }
 .fourth{
     padding-bottom:25px;
@@ -535,6 +574,7 @@ font-weight: 600;
     gap:31px;
     padding-bottom:100px;
 }
+
 .ear-head{
     margin: 0;
     padding-left:10px;
@@ -601,7 +641,7 @@ font-weight: 600;
     padding-top: 100px;
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 14px;
+    font-size: 17px;
     font-family: 'Libre Franklin';
     color: #6e7691;
     font-weight: 500;
@@ -638,12 +678,12 @@ font-weight: 600;
     background: #dae8e8;
     
     font-family: 'Libre Franklin';
-    padding: 80px 172px 80px 127px;
+    padding: 80px 127px 80px 127px;
     color: #6e7691;
     position: absolute;
     left: 296px;
-    border-radius: 40px 24px 25px 40px;
-    width: 77%;
+    border-radius: 40px 40px 40px 40px;
+    width: 70%;
 }
 
 .testimonial-content{
@@ -657,17 +697,19 @@ font-weight: 600;
 .testimonial-para{
     font-size:18px;
 }
-.box{
+.box {
     background: white;
-    width: 122px;
+    width: 156px;
     height: 48px;
-    position: relative;
-    right: -833px;
+    position: absolute;
+    right: -65px;
     transform: rotate(90deg);
-    top: -28px;
+    top: 147px;
     border-radius: 12px;
     content: " ";
+
 }
+
 .testimonialImg-container {
 
     z-index: 1;
@@ -697,7 +739,7 @@ font-weight: 600;
   .rating label {
     cursor: pointer;
     font-size:20px;
-    color: #eee; /* Default color for unchecked stars */
+    color: gold; /* Default color for unchecked stars */
      
   }
   
@@ -705,19 +747,14 @@ font-weight: 600;
     content: '★';
   }
   
-  .rating input:checked ~ label {
-    color: gold;
-  }
   
-  .rating label:hover,
-  .rating label:hover ~ label {
-    color: gold;
-
-  }
   .testimonial-slider {
     position: relative;
     overflow: hidden;
     width: 100%; /* Adjust as needed */
+}
+.testimonial-content{
+    padding-top:40px;
 }
 .testimonial-slide {
     display: flex;
@@ -803,7 +840,7 @@ font-weight: 600;
     .blog-content{
         display: flex;
         gap: 36px;
-        padding-top:20px;
+        padding-top:60px;
 
     }
 .blogs-container{
@@ -896,7 +933,7 @@ footer {
     padding-bottom:120px;
 }
 .footer-img{
-    width:80%;
+    width:62%;
 }
 .social-mediaLinks{
     list-style: none;
@@ -924,7 +961,7 @@ footer {
     text-decoration: none;
     color:#727b96;
     font-family: 'Libre Franklin';
-    font-size:16px;
+    font-size:13px;
     font-weight:600;   
 }
 .link:hover{
@@ -942,7 +979,7 @@ footer {
     color:#727b96;
     font-family: 'Libre Franklin';
     font-weight:600;
-    font-size:16px;
+    font-size:13px;
     margin-top:19px;
 }
 .footer-phone, .footer-mail{
@@ -996,7 +1033,7 @@ li.links4:hover{
     color:#727b96;
     font-weight:600;
     font-family: 'Libre Franklin';
-    font-size:16px;
+    font-size:14px;
 }
 .phone-link:hover, .mail-link:hover{
     text-decoration: underline;
@@ -1007,13 +1044,14 @@ li.links4:hover{
     margin: 0px;
     right: -104px;
     transform: rotate(-90deg);
-    top: 288px;
+    top: 434px;
     font-size: 15px;
     background: #e77924;
     color: #ffffff;
     padding: 10px 20px 10px 20px;
     font-family: 'Libre Franklin';
     letter-spacing: 3px;
+    z-index: 1;
     
 }
 .copyright-container{
@@ -1025,7 +1063,7 @@ li.links4:hover{
 }
 .copyright, .developed-by{
     color:#606b88;
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Libre Franklin';
     font-weight: 500;
     padding:10px;
@@ -1033,7 +1071,7 @@ li.links4:hover{
 }
 .footer-subContainer {
     display: flex;
- width: 55%;
+ width: 60%;
     justify-content: space-between;
 }
 .footer-dropdownContainer{
@@ -1083,6 +1121,17 @@ li.links4:hover{
     width: 200px;
     height: 200px;
 }
+.box{
+background: white;
+width: 129px;
+height: 48px;
+position: absolute;
+right: -56px;
+transform: rotate(90deg);
+top: 105px;
+border-radius: 12px;
+content: " ";
+}
 .doc-name {
      font-size: 1.4em;
 }
@@ -1095,7 +1144,7 @@ li.links4:hover{
 
 .profile-card {
     
-    flex-basis: 382px;
+    flex-basis: 32%;
 }
 .btn{
     font-size: 13px;
@@ -1104,13 +1153,13 @@ li.links4:hover{
     width: 350px;
 }
 .testimonials-info{
-    padding: 50px 172px 50px 127px;
+    padding: 50px 127px 50px 127px;
 }
 .testimonial-para {
-    font-size: 15px;
+    font-size: 16px;
 }
 .testimonial-name {
-    font-size: 13px;
+    font-size: 15px;
 }
 .blog-date {
     font-size: 14px;
@@ -1148,6 +1197,17 @@ li.links4:hover{
         font-size: 11px;
         
     }
+    .box {
+        background: white;
+        width: 122px;
+        height: 48px;
+        position: absolute;
+        right: -6%;
+        transform: rotate(90deg);
+        top: 103px;
+        border-radius: 12px;
+        content: " ";
+    }
     
 }
 
@@ -1161,6 +1221,9 @@ li.links4:hover{
         align-items: center;
         justify-content: space-between;
     }
+    .sectionSecond-contentConatiner {
+        width: 50%;
+    }
     .mainBanner-container {
         width: 90%;
         margin: 0 auto;
@@ -1168,7 +1231,7 @@ li.links4:hover{
         position: relative;
     }
     .sectionSecond-container {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -1239,10 +1302,10 @@ li.links4:hover{
         background: white;
         width: 122px;
         height: 48px;
-        position: relative;
-        right: -825px;
+        position: absolute;
+        right: -6%;
         transform: rotate(90deg);
-        top: -28px;
+        top: 105px;
         border-radius: 12px;
         content: " ";
     }
@@ -1284,7 +1347,7 @@ li.links4:hover{
         position: relative;
     }
     .sectionSecond-container {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -1292,6 +1355,9 @@ li.links4:hover{
         padding-top: 100px;
         justify-content: space-between;
         position: relative;
+    }
+    .section-heading {
+        font-size: 47px;
     }
     .sectionThird-container {
         width: 90%;
@@ -1357,12 +1423,12 @@ li.links4:hover{
         background: #dae8e8;
         height: 250px;
         font-family: 'Libre Franklin';
-        padding: 60px 207px 50px 100px;
+        padding: 60px 100px 50px 100px;
         color: #6e7691;
         position: absolute;
         left: 233px;
         border-radius: 24px 24px 25px 25px;
-        width: 903px;
+        width: 72%;
     }
     .testimonials-container {
         width:90%;
@@ -1376,10 +1442,10 @@ li.links4:hover{
         background: white;
         width: 122px;
         height: 48px;
-        position: relative;
-        right: -736px;
+        position: absolute;
+        right: -6%;
         transform: rotate(90deg);
-        top: -28px;
+        top: 96px;
         border-radius: 12px;
         content: " ";
     }
@@ -1428,6 +1494,16 @@ li.links4:hover{
     .profiles {
         width: 97%;
     }
+    .testimonial-para {
+        font-size: 16px;
+    }
+    .sectionSecond-img {
+        height: 400px;
+        width: 400px;
+    }
+    .sectionSecond-contentConatiner {
+        width: 52%;
+    }
    
     .short-heading {
         color: #e6dbd4;
@@ -1468,7 +1544,7 @@ li.links4:hover{
         align-items: center;
     }
     .sectionSecond-container {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -1592,12 +1668,12 @@ li.links4:hover{
         background: #dae8e8;
         height: 250px;
         font-family: 'Libre Franklin';
-        padding: 60px 207px 50px 100px;
+        padding: 60px 99px 50px 100px;
         color: #6e7691;
         position: absolute;
         left: 233px;
         border-radius: 24px 24px 25px 25px;
-        width: 829px;
+        width: 70%;
     }
     .tesimonialscarousel.owl-carousel .owl-dots {
         right: 161px;
@@ -1606,10 +1682,10 @@ li.links4:hover{
         background: white;
         width: 122px;
         height: 48px;
-        position: relative;
-        right: -660px;
+        position: absolute;
+        right: -6%;
         transform: rotate(90deg);
-        top: -28px;
+        top: 101px;
         border-radius: 12px;
         content: " ";
     }
@@ -1704,7 +1780,7 @@ li.links4:hover{
     }
     .section-heading {
         margin: 0;
-        font-size: 44px;
+        font-size: 42px;
     }
     .profile-card {
         flex-basis: 284px;
@@ -1751,7 +1827,7 @@ li.links4:hover{
         align-items: center;
     }
     .sectionSecond-container {
-       width: 90%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -1799,7 +1875,7 @@ li.links4:hover{
         padding-top: 80px;
         padding-left: 15px;
         padding-right: 15px;
-        font-size: 13px;
+        font-size: 16px;
         font-family: 'Libre Franklin';
         color: #6e7691;
         font-weight: 500;
@@ -1862,31 +1938,31 @@ li.links4:hover{
         display: flex;
         /* justify-content: center; */
         gap: 8px;
-        margin-top: 20px;
+        margin-top: 11px;
         height: 5px;
-        width: 28px;
+        width: 27px;
+    
     }
     .testimonials-info {
         flex: 2;
         background: #dae8e8;
-        height: 218px;
         font-family: 'Libre Franklin';
-        padding: 60px 207px 50px 100px;
+        padding: 60px 100px 50px 100px;
         color: #6e7691;
         position: absolute;
         left: 233px;
         border-radius: 24px 24px 25px 25px;
-        width: 731px;
+        width: 65%;
     }
     .testimonial-para{
-        font-size: 13px;
+        font-size: 16px;
     }
     .tesimonialscarousel.owl-carousel .owl-dots {
         right: 55px;
     }
     .testimonial-name {
         margin: 0;
-        font-size: 11px;
+        font-size: 15px;
         line-height: 1;
         color: #3d8e82;
         font-weight: 600;
@@ -1895,10 +1971,10 @@ li.links4:hover{
         background: white;
         width: 122px;
         height: 43px;
-        position: relative;
-        right: -565px;
+        position: absolute;
+        right: -7%;
         transform: rotate(90deg);
-        top: -28px;
+        top: 82px;
         border-radius: 12px;
         content: " ";
     }
@@ -1944,7 +2020,7 @@ li.links4:hover{
         gap: 32px;
     }
     .footer-img {
-        width: 85%;
+        width: 57%;
     }
     .social-mediaLinks {
         list-style: none;
@@ -2051,8 +2127,8 @@ li.links4:hover{
 }
 .navigation {
     position: absolute;
-    bottom: 33px;
-    left: 50%;
+    bottom: 52px;
+        left: 52%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
@@ -2060,7 +2136,7 @@ li.links4:hover{
     z-index: 1;
 }
     .sectionSecond-container {
-       width: 90%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -2216,14 +2292,20 @@ li.links4:hover{
     .testimonials-info {
         flex: 2;
         background: #dae8e8;
-        height: 218px;
         font-family: 'Libre Franklin';
-        padding: 60px 59px 50px 100px;
+        padding: 60px 70px 50px 70px;
         color: #6e7691;
         position: absolute;
-        left: 203px;
+        left: 207px;
         border-radius: 24px 24px 25px 25px;
-        width: 692px;
+        width: 76%;
+    }
+    .testimonial-name {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1;
+        color: #3d8e82;
+        font-weight: 600;
     }
     .testimonial-navigation {
         text-align: center;
@@ -2268,14 +2350,14 @@ li.links4:hover{
     }
     .box
     {background: white;
-    width: 122px;
-    height: 43px;
-    position: relative;
-    right: -524px;
-    transform: rotate(90deg);
-    top: -27px;
-    border-radius: 12px;
-    content: " ";
+        width: 122px;
+        height: 43px;
+        position: absolute;
+        right: -7%;
+        transform: rotate(90deg);
+        top: 86px;
+        border-radius: 12px;
+        content: " ";
 }
 }
 @media(max-width:908px){
@@ -2301,6 +2383,9 @@ li.links4:hover{
         position: absolute;
         right: 0px;
         top: -2px;
+    }
+    .footer-img {
+        width: 76%;
     }
     .mainBanner-container {
         width: 90%;
@@ -2340,7 +2425,7 @@ li.links4:hover{
         left: 28px;
     }
     .sectionSecond-container {
-      width: 90%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -2485,26 +2570,26 @@ li.links4:hover{
     .testimonials-info {
         flex: 2;
         background: #dae8e8;
-        height: 218px;
+       
         font-family: 'Libre Franklin';
-        padding: 60px 59px 50px 100px;
+        padding: 60px 70px 50px 70px;
         color: #6e7691;
         position: absolute;
         left: 190px;
         border-radius: 24px 24px 25px 25px;
-        width: 626px;
+        width: 75%;
     }
     .testimonial-para {
-        font-size: 12px;
+        font-size: 16px;
     }
     .box {
         background: white;
         width: 122px;
         height: 43px;
-        position: relative;
-        right: -464px;
+        position: absolute;
+        right: -9%;
         transform: rotate(90deg);
-        top: -27px;
+        top: 88px;
         border-radius: 12px;
         content: " ";
     }
@@ -2646,7 +2731,7 @@ li.links4:hover{
         left: 22px;
     }
     .sectionSecond-container {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -2771,8 +2856,9 @@ li.links4:hover{
         
     }
     .profileCarousel .owl-nav{
-        position: relative;
+        display: none;
     }
+   /* }
     .profileCarousel .owl-nav .owl-prev{
         position: absolute;
         top:-222px;
@@ -2798,10 +2884,10 @@ li.links4:hover{
         background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGZpbGw9IiM5YmExYjEiIGQ9Ik0zNDAuODY0IDE0OS4zMTJhMzAuNTkgMzAuNTkgMCAwIDAgMCA0Mi43NTJMNjUyLjczNiA1MTJMMzQwLjg2NCA4MzEuODcyYTMwLjU5IDMwLjU5IDAgMCAwIDAgNDIuNzUyYTI5LjEyIDI5LjEyIDAgMCAwIDQxLjcyOCAwTDcxNC4yNCA1MzQuMzM2YTMyIDMyIDAgMCAwIDAtNDQuNjcyTDM4Mi41OTIgMTQ5LjM3NmEyOS4xMiAyOS4xMiAwIDAgMC00MS43MjggMHoiLz48L3N2Zz4=');
         
         transition: filter 0.3s ease;
-    }
+    } */
         
     
-    /* .profileCarousel .owl-dots{
+    .profileCarousel .owl-dots{
         justify-content: center;
         align-items: center;
         right: 252px;
@@ -2822,7 +2908,7 @@ li.links4:hover{
     }
     .profileCarousel .owl-dots .owl-dot.active{
         background-color:#333;
-    } */
+    }
     
   
         .box {
@@ -2848,11 +2934,35 @@ li.links4:hover{
         display: block;
         width: 241px !important;
     }
-    .treatmentCarousel.owl-carousel.owl-loaded.owl-drag{
+    .treatmentCarousel.owl-carousel.owl-loaded.owl-drag,  .noseTreatmentCarousel.owl-carousel.owl-loaded.owl-drag,  .throatTreatmentCarousel.owl-carousel.owl-loaded.owl-drag{
         display: grid !important;
         gap:0px;
         
 
+    }
+    .treatmentCarousel .owl-nav , .noseTreatmentCarousel .owl-nav, .throatTreatmentCarousel .owl-nav{
+        display: none;
+    }
+    .treatmentCarousel .owl-dots, .noseTreatmentCarousel .owl-dots, .throatTreatmentCarousel .owl-dots {
+        justify-content: center;
+        align-items: center;
+        right: 252px;
+        display: flex;
+        gap: 9px;
+    }
+        .treatmentCarousel .owl-dots .owl-dot.active, .noseTreatmentCarousel .owl-dots .owl-dot.active, .throatTreatmentCarousel .owl-dots .owl-dot.active {
+        background-color: #333;
+    }
+        .treatmentCarousel .owl-dots .owl-dot, .noseTreatmentCarousel .owl-dots .owl-dot, .throatTreatmentCarousel .owl-dots .owl-dot {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 20px;
+        height: 4px;
+        width: 21px;
+        background-color: #d0d7d9;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
     }
     .noseTreatmentCarousel.owl-carousel .owl-item img{
         width:241px !important;
@@ -2883,10 +2993,10 @@ li.links4:hover{
         background: white;
         width: 122px;
         height: 43px;
-        position: relative;
-        right: -425px;
+        position: absolute;
+        right: -9%;
         transform: rotate(90deg);
-        top: -27px;
+        top: 82px;
         border-radius: 12px;
         content: " ";
     }
@@ -2936,7 +3046,7 @@ li.links4:hover{
     .testimonials-info {
         flex: 2;
         background: #dae8e8;
-        height: 218px;
+        
         font-family: 'Libre Franklin';
         padding: 60px 49px 47px 87px;
         color: #6e7691;
@@ -3009,52 +3119,45 @@ li.links4:hover{
         position: relative
     }
     .blogCarousel .owl-nav{
-        display: inline-block !important;
-        text-align: right;
-        position: absolute;
-        font-size:6px;
-       gap: 55px;
-       align-items:center;
-       right: 20px;
-       bottom: -49px;
-        border: 1px solid;
-        padding: 4px 20px 5px 20px;
-        border-radius: 12px 12px 12px 12px;
-       
-    }
-    .owl-prev span, .owl-next span{
         display: none;
     }
-    .owl-prev::before,
-.owl-next::before {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-size: cover;
-  
-}
-
-.owl-prev::before {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="black" d="M20 11v2H8l5.5 5.5l-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5L8 11h12Z"></path></svg>');
-  margin-right: 16px;
-  transition: filter 0.3s ease;
-}
-.owl-prev:hover::before {
+    .blogCarousel .owl-dots{
+        justify-content: center;
+        align-items: center;
+        right: 252px;
+        display: flex;
+        gap: 9px;
     
-        filter: grayscale(100%) brightness(0.9);
-      
-  }
+    }
+    .blogCarousel .owl-dots .owl-dot.active {
+        background-color: #333;
+    }
+    .blogCarousel .owl-dots .owl-dot {
+        display: flex !important;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 20px;
+        height: 4px;
+        width: 21px;
+        background-color: #d0d7d9;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+    .blogCarousel .owl-dots .owl-dot {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 20px;
+        height: 4px;
+        width: 21px;
+        background-color: #d0d7d9;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+    .blogCarousel .owl-dots.disabled{
+        display: flex !important;
+    }
 
-.owl-next::before {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="black" d="M11.3 19.3q-.275-.275-.288-.7t.263-.7l4.9-4.9H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.175l-4.9-4.9q-.275-.275-.263-.7t.288-.7q.275-.275.7-.275t.7.275l6.6 6.6q.15.125.213.313t.062.387q0 .2-.062.375t-.213.325l-6.6 6.6q-.275.275-.7.275t-.7-.275Z"></path></svg>');
-  margin-left: 16px;
-}
-
-.owl-prev, .owl-next {
-  background: none; /* Remove any default background */
-  border: none; /* Remove any border if needed */
-}
 .footer-subContainer {
     display: flex;
     width: 100%;
@@ -3124,7 +3227,7 @@ li.links4:hover{
         left: 11px;
     }
     .sectionSecond-container {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         gap: 20px;
@@ -3300,7 +3403,7 @@ li.links4:hover{
         padding-top: 80px;
         padding-left: 15px;
         padding-right: 15px;
-        font-size: 11px;
+        font-size: 16px;
         font-family: 'Libre Franklin';
         color: #6e7691;
         font-weight: 500;
@@ -3365,10 +3468,10 @@ li.links4:hover{
         top: 428px;
     }
     .box{
-        right: -512px;
-        top: -35px;
-
-    }
+    right: -10%;
+    top: 140px;
+    width: 157px;
+}
     .blogs-container {
         width: 90%;
         padding-bottom: 50px;
@@ -3428,7 +3531,7 @@ li.links4:hover{
         padding:13px 10px 13px 10px;
     }
     .sectionSecond-container {
-        width: 90%;
+        width: 85%;
         flex-direction: column;
         gap: 45px;
     }
@@ -3529,7 +3632,8 @@ li.links4:hover{
             padding: 125px 49px 47px 49px;
         }
         .box {
-            right: -451px;
+            top: 151px;
+            right: -11%;
         }
         .blogs-container {
             width: 90%;
@@ -3583,7 +3687,7 @@ li.links4:hover{
         top: 89px;
     }
     .sectionSecond-container {
-        width: 90%;
+        width: 85%;
     }
     .sectionThird-container {
         width: 90%;
@@ -3653,10 +3757,10 @@ li.links4:hover{
         width: 485px;
     }
     .box {
-        right: -365px;
-        top:-38px;
-
+        right: -14%;
+        top: 160px;
     }
+
     .blogs-container {
         width: 90%;
     }
@@ -3699,7 +3803,7 @@ li.links4:hover{
     }
     .sectionSecond-container{
         padding-top: 50px;
-        width: 90%;
+        width: 85%;
     }
     .sectionSecond-img {
         height: 250px;
@@ -3848,6 +3952,7 @@ li.links4:hover{
         display: block;
         height: 308px;
         object-fit: cover;
+                border-radius: 0px 0px 20px 20px;
     }
     .mainBanner-container {
         width: 90%;
@@ -3858,7 +3963,7 @@ li.links4:hover{
     }
     .sectionSecond-container {
         padding-top: 50px;
-        width: 90%;
+        width: 85%;
     }
     .section-heading {
         margin: 0;
@@ -3898,7 +4003,7 @@ li.links4:hover{
     }
     .treatment-para{
         padding-top: 50px;
-        font-size: 13px;
+        font-size: 16px;
     }
     .treatment-head {
         font-size: 15px;
@@ -3922,6 +4027,21 @@ li.links4:hover{
     .blank-container {
         display: none;
     }
+    .book-appoinment {
+        position: fixed;
+        text-decoration: none;
+        margin: 0px;
+        right: 25%;
+        transform: rotate(0deg);
+        top: 310px;
+        font-size: 13px;
+        background: #e77924;
+        color: #ffffff;
+        padding: 10px 20px 10px 20px;
+        font-family: 'Libre Franklin';
+        letter-spacing: 3px;
+        z-index: 2;
+    }
     .read-more{
         padding-bottom: 50px;
     }
@@ -3935,7 +4055,7 @@ li.links4:hover{
         width:365px;
         display: block;
         margin: 0 auto;
-        padding-bottom:40px;
+
     }
     .footersvg1::before{
         content:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCI+PHBhdGggZmlsbD0iIzFhMjc1MSIgZD0ibTQ4OC44MzIgMzQ0LjMybC0zMzkuODQgMzU2LjY3MmEzMiAzMiAwIDAgMCAwIDQ0LjE2bC4zODQuMzg0YTI5LjQ0IDI5LjQ0IDAgMCAwIDQyLjY4OCAwbDMyMC0zMzUuODcybDMxOS44NzIgMzM1Ljg3MmEyOS40NCAyOS40NCAwIDAgMCA0Mi42ODggMGwuMzg0LS4zODRhMzIgMzIgMCAwIDAgMC00NC4xNkw1MzUuMTY4IDM0NC4zMmEzMiAzMiAwIDAgMC00Ni4zMzYgMCIvPjwvc3ZnPg==');
@@ -3996,7 +4116,7 @@ li.links4:hover{
         visibility: visible;
         padding-bottom:10px;
     }
-    .quickLinks-container, .footerTreatments-container, .reach-us{
+    .quickLinks-container, .footerTreatments-container{
         border-bottom: 1px solid #727b96;
     }
     .quickLink-heading ,.treatment-heading,.reachUs-heading{
@@ -4051,7 +4171,13 @@ li.links4:hover{
     }
     .sectionSecond-container {
         padding-top: 50px;
-        width: 90%;
+        width: 85%;
+    }
+    .book-appoinment {
+        position: fixed;
+        text-decoration: none;
+        margin: 0px;
+        right: 19%;
     }
     .section-heading {
         margin: 0;
@@ -4151,12 +4277,19 @@ li.links4:hover{
     }
     .sectionSecond-container {
         padding-top: 40px;
-        width: 90%;
+        width: 85%;
     }
     .sectionSecond-img {
         height: 210px;
         width: 200px;
     }
+    .book-appoinment {
+        position: fixed;
+        text-decoration: none;
+        margin: 0px;
+        right: 15%;
+    }
+
     .section-heading {
         margin: 0;
         font-size: 26px;
