@@ -58,7 +58,7 @@ body{
     color:#fff;
 }
 .breadcrumb-items.active{
-    transition: all 0.2s ease-out;
+    transition: all 0.2s ease-in-out;
 }
 .breadcrumb-items.active:hover{
     color: #fff;
@@ -108,11 +108,14 @@ text-decoration: underline;
 }
 .treatmentsServices{
     display: flex;
-    border: 3px solid #eae7e7;
+    border: 1px solid transparent;
+    transition:all 0.2s ease-in-out ;
+    cursor: pointer;
 }
 .treatmentServiceImg-container{
     transition: all 0.2s ease-in-out;
     overflow: hidden;   
+    display: flex;
 }
 
 .treatmentsServices:hover{
@@ -143,7 +146,7 @@ text-decoration: underline;
     display: grid;
     grid-template-columns: repeat(3, 32%) ;
     padding-bottom:40px;
-    gap:2%;
+    gap: 20px;
 }
 .treatmentService-items{
     
@@ -187,10 +190,12 @@ text-decoration: underline;
 .treatmentService-link{
     text-decoration: none;
     color:#1a2751;
-    transition: all 0.2s ease-out;   
+    border-bottom: 2px solid transparent; /* Invisible border initially */
+    transition: border-bottom 0.3s ease-in-out; /* Smooth transition on border-bottom */
+    transition: all 0.3s ease-in-out;   
 }
 .treatmentService-link:hover{
-    text-decoration: underline;
+    border-bottom: 2px solid #1a2751;
 color:#1a2751;
 }
 .treatmentServiceLink-container{
@@ -207,4 +212,27 @@ color:#1a2751;
     margin-top:30px;
     text-align: center;
 
+}
+/*resposiveness Starts */
+
+@media(max-width:908px){
+    .treatmentsServices-container {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+
+}
+@media(max-width:481px){
+    .treatmentsServices-container {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+       
+    }
+    .section-heading.treatment {
+        text-align: center;
+        z-index: 2;
+        position: relative;
+        margin: 0;
+        font-size: 55px;
+    }
 }
