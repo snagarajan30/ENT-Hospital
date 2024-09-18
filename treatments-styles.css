@@ -109,12 +109,20 @@ text-decoration: underline;
 .treatmentsServices{
     display: flex;
     border: 3px solid #eae7e7;
-    box-shadow: 0px 0px 50px rgba(5, 5, 5, 0.08);
-   
-    
+}
+.treatmentServiceImg-container{
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;   
+}
+
+.treatmentsServices:hover{
+ box-shadow: 0px 0px 50px rgba(5, 5, 5, 0.08);
+}
+.treatmentsServices:hover .treatmentService-img{
+    transform: scale(1.05);
 }
 .subTreatmentsServices{
-    padding: 13px 13px;
+    padding: 0px;
     width:100%;
     
 }
@@ -147,11 +155,12 @@ text-decoration: underline;
     width: 100%;
     height: 308px;
     object-fit: cover;
+    transition: all 0.3s ease-out;
 }
 .treatmentService-content{
     padding: 25px 0px 25px 0px;
     background:#fff;
-    margin-top:20px;
+
 
     
 }
