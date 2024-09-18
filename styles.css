@@ -175,6 +175,8 @@ body{
     background-size: cover;
     /* height: 700px; */
     position: relative;
+    margin-top:85px;
+
 }
 .main-banner{
     padding-top:10px;
@@ -1245,6 +1247,7 @@ content: " ";
         margin: 0 auto;
         background-size: cover;
         position: relative;
+        margin-top: 85px;
     }
     .sectionSecond-container {
         width: 85%;
@@ -1361,6 +1364,7 @@ content: " ";
         margin: 0 auto;
         background-size: cover;
         position: relative;
+        margin-top:72px;
     }
     .sectionSecond-container {
         width: 85%;

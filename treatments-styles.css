@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    transition: all 0.2s ease-out;
+    
+}
+.treatmentBanner-container{
+
+    background-image:url('Images/treatment-banner-img.png');
+    width:90%;
+    margin: 90px auto 0px auto;
+    position: relative;
+}
+.treatmentBanner::before{
+    content: ''; /* The ::before element requires a content property */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+   left:5%;
+    height: 600px;
+    background: rgba(88, 79, 79, 0.7);          
+    z-index: 1;
+    margin-top: 90px;
+    border-radius :0px 0px 30px 30px;
+   
+
+}
+.treatmentBanner{
+    width: 90%;   
+    margin: 0 auto;     
+    height: 600px; 
+    background-image: url('Images/treatment-banner.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:0px 0px 30px 30px;
+    
+}
+
+.treatmentBannerContent{
+    position: absolute;
+    top:199px;
+    margin-left:50px;
+    z-index: 2;
+}
+.breadcrumb-items{
+    font-family: 'Libre Franklin';
+    text-decoration: none;
+    color:#1a2751;
+}
+.breadcrumb-items.active{
+    transition: all 0.2s ease-out;
+}
+.breadcrumb-items.active:hover{
+    color: #6e7691;
+text-decoration: underline;
+}
+.breadcrumb {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+.breadcrumb li{
+    padding-right: 10px;
+    color:#1a2751;
+}
+.treatmentsHeading{
+    font-family: 'Libre Franklin';
+    font-size: 50px;
+    margin: 0px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight:500;
+}
+.treatmentPara{
+    margin: 0;
+    font-family: 'Libre Franklin';
+    font-size:34px;
+    margin-top:20px;
+    color:#fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.dark-letter{
+    font-weight: 700;
+}
+.treatmentstypes{
+    background: #efefef;
+}
+.treatmentstypes-container{
+    width: 90%;
+    margin: auto;
+    padding-top:60px;
+}
+.treatmentsServices{
+    display: flex;
+   
+    
+}
+.subTreatmentsServices{
+    padding: 20px 13px;
+    background:#fff;
+}
+
+.section-heading.treatment{
+    text-align: center;
+}
+.treatmentsServices-container{
+    display: grid;
+    grid-template-columns: repeat(3, 34%) ;
+    padding-bottom:40px;
+}
+.treatmentService-items{
+    
+    display: flex;
+    flex-direction: column;
+}
+.treatmentService-img{
+    width: 100%;
+    height: 308px;
+    object-fit: cover;
+}
+.treatmentService-content{
+    padding: 25px 0px 25px 20px;
+
+    
+}
+.treatmentService-contentHead{
+    margin: 0;
+    font-size:24px;
+    margin-bottom:30px;
+    font-family: 'Libre Baskerville';
+    color: #1a2751;
+    font-weight:500;
+
+}
+.treatmentService-contentPara{
+    margin: 0;
+    font-size:16px;
+    font-family: 'Libre Franklin';
+    color:#6e7691;
+    font-weight: 500;
+}
+.treatmentService-link{
+    text-decoration: none;
+    color:#1a2751;
+    transition: all 0.2s ease-out;   
+}
+.treatmentService-link:hover{
+    text-decoration: underline;
+color:#1a2751;
+}
+.treatmentServiceLink-container{
+    
+    text-decoration: none;
+    font-family: 'Libre Franklin';
+    letter-spacing: 2px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.2s all ease-out;
+    color:#6e7691;
+    transition: all 0.2s ease-out;
+    margin-bottom: 0px;
+    margin-top:30px;
+
+}
