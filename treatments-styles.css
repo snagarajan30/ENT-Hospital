@@ -145,7 +145,7 @@ text-decoration: underline;
 .treatmentsServices-container{
     display: grid;
     grid-template-columns: repeat(3, 32%) ;
-    padding-bottom:40px;
+    padding-bottom:60px;
     gap: 20px;
 }
 .treatmentService-items{

@@ -106,7 +106,7 @@ body{
     width: 250px;
     height: 100%;
     background-color: white;
-    padding: 20px;
+    overflow-y: auto;
     transition: left 0.3s ease;
     z-index: 999;
 }
@@ -118,10 +118,14 @@ body{
 .side-menu ul {
     list-style-type: none;
     padding: 0;
+    margin: 0px;
 }
 
-.side-menu ul li {
-    margin: 20px 0;
+.sideMenu-items a{
+    padding:13px 30px 13px 10px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+   
 }
 
 .side-menu ul li a {
@@ -129,19 +133,60 @@ body{
     font-size: 18px;
     color: #1a2751;
     font-family: 'Libre Franklin';
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+.treatmentLink-dropdown{
+   
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    font-size: 18px;
+    color: #1a2751;
+    font-family: 'Libre Franklin';
+    position: relative;
+}
+.treatmentLink-dropdown .treatmentLinkDropdown-link{
+    padding:13px 30px 13px 10px;
+    display: block;
+}
+.treatmentLink-dropdown li{
+   
+    padding: 12px 22px;
+    border-bottom: 1px solid #eee;
 }
 .treaments-link{
     max-height: 0;
         overflow: hidden;
         opacity: 0;
         visibility: hidden;
-        transition: max-height 0.5s ease, opacity 0.5s ease;
+        /* transition: max-height 0.5s ease, opacity 0.5s ease; */
+        border-top: 1px solid #ccc;
+        padding-left: 0px;
 }
 .treaments-link.down{
     max-height: 500px;
     opacity: 1;
     visibility: visible;
-    padding-bottom: 10px;
+    
+}
+.treatmentLink-svg::before{
+    content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJtMTcgMTRsLTUtNWwtNSA1Ii8+PC9zdmc+');
+    display: flex;
+    align-items:center;
+}
+.treatmentLink-svg.active{
+    content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJtNyAxMGw1IDVsNS01Ii8+PC9zdmc+');
+    padding: 14px 11px;
+}
+.treatmentLink-svg{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 12px 11px;
+    display: flex;
+    align-items:center;
+    border-left: 1px solid #ccc;
 }
 
 
@@ -1072,6 +1117,7 @@ li.links4:hover{
     z-index: 1;
     
 }
+
 .copyright-container{
     display: flex;
     justify-content: space-between;

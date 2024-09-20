@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    transition: all 0.2s ease-out;
+}
+.doctors-profile{
+    position: relative;
+    background:#efefef;
+}
+.doctorsBanner{
+    width: 100%;   
+         
+    height: 300px; 
+    background-image: url('Images/doctors_banner.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.doctorBanner-container{
+    /* margin: 90px auto 0px auto; */
+    position: relative;
+    padding-top: 90px;
+    z-index: 2;
+}
+.doctorBanner-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: rgba(88, 79, 79, 0.7);
+    z-index: 1;
+    
+}
+.section-heading.doctor{
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin: 0;
+    font-size: 50px;
+    font-family: 'Libre Baskerville';
+    color: #fff;
+    letter-spacing: -2px;
+    font-weight: 500;
+    line-height: 1;
+}
+.breadcrumb-items{
+    font-family: 'Libre Franklin';
+    text-decoration: none;
+    color:#fff;
+}
+.breadcrumb-items.active{
+    transition: all 0.2s ease-in-out;
+}
+.breadcrumb-items.active:hover{
+    color: #fff;
+text-decoration: underline;
+}
+.breadcrumb {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    position: relative;
+    z-index: 2;
+}
+.breadcrumb li{
+    padding-right: 10px;
+    color:#fff;
+}
+.doctorsProfileBackground-container{
+    color: #ffffff;
+    background-color: #efefef;
+    
+    height: 380px;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+.doctorsHeading{
+    font-family: 'Libre Baskerville';
+    letter-spacing: -2px;
+    font-weight: 500;
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
+    color:#1a2751;
+}
+.doctorProfileHeading-container{
+    padding-top:60px;
+}
+.doctorProfile-container{
+    width:85%;
+    margin:auto;
+   padding-top:60px;
+}
+.subDoctorProfile-container{
+    display: grid;
+    grid-template-columns: repeat(3, 31.4%);
+    margin: auto;
+    gap:41px;
+   padding-bottom:50px;
+}
+.doctor-profile{
+    padding: 30px;
+ 
+    background:white;
+    border-radius: 50px;
+    transition:all 0.3s ease-out;
+}
+.doctor-profile:hover{
+    box-shadow: 0px 0px 50px rgba(5, 5, 5, 0.08);
+}
+.doctorimg{
+    width: 79%;
+    height: 311px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+.doctorProfileContent-container{
+    width:100%;
+    margin: auto;
+    padding: 20px;
+    background:#efefef;
+    margin-top:20px;
+    
+}
+.doctorProfile-link{
+    text-decoration: none;
+     font-family: 'Libre Franklin'
+}
+.doctorProfileName{
+    text-align: center;
+    font-size: 24px;    
+  
+    font-size: 1.5em;
+    margin-bottom:10px;
+    color:#465d9e;
+    
+   
+}
+.doctorDesignation{
+    font-family: 'Libre Franklin';
+    text-align: center;
+    font-size: 20px;
+    margin-bottom:10px;
+    font-weight: 500    ;
+    
+    color: #444f6a;
+}
+.doctorInfo{
+    font-family: 'Libre Franklin';
+    text-align: center;
+    font-size: 16px;
+    color: #6e7691;
+}
+
+/* responsiveness */
+@media(max-width:1441px){
+    .doctorimg {
+        width: 72%;
+        height: 233px;
+    }
+    .subDoctorProfile-container {
+        display: grid;
+        grid-template-columns: repeat(3, 31%);
+    }
+}
+@media(max-width:1167px){
+    .doctor-profile {
+        padding: 25px;
+       
+    }
+    .subDoctorProfile-container {
+        display: grid;
+        grid-template-columns: repeat(3, 31.4%);
+        margin: auto;
+        gap: 34px;
+    }
+    .doctorProfileName {
+        font-size: 1.3em;
+    }
+
+    .doctorDesignation {
+        
+        font-size: 16px;
+    }
+    .doctorInfo {
+       
+        font-size: 15px;
+    }
+    .doctorimg {
+        width: 79%;
+        height: 239px;
+    }
+    .subDoctorProfile-container {
+       
+        gap: 28px;
+    }
+}
+@media(max-width:1078px){
+    .subDoctorProfile-container {
+        gap: 26px;
+    }
+    .doctorimg {
+        width: 76%;
+        height: 199px;
+    }
+    .doctorProfile-container {
+        width: 90%;
+    }
+}
+@media(max-width:999px){
+    .subDoctorProfile-container {
+        display: grid;
+        grid-template-columns: repeat(2, 44.4%);
+        gap:95px;
+    }
+    .doctorProfile-container {
+        width: 85%;
+    }
+}
+@media(max-width:908px){
+    .subDoctorProfile-container {
+        gap: 86px;
+    }
+    .section-heading.doctor {
+        font-size: 40px;
+    }   
+    .doctorsHeading {
+        font-size: 50px;
+    }     
+}
+@media(max-width:835px){
+    .subDoctorProfile-container {
+        gap: 30px 79px;
+    }
+}
+@media(max-width:768px){
+    .subDoctorProfile-container {
+        gap: 30px 72px;
+    }
+}
+@media(max-width:675px){
+    .subDoctorProfile-container {
+        gap: 30px 34px;
+        grid-template-columns: repeat(2, 47%);
+    }
+    .doctorProfileName {
+        font-size: 1.2em;
+    }
+    .section-heading.doctor {
+        font-size: 34px;
+    }
+}
+@media(max-width:584px){
+    .subDoctorProfile-container {
+        gap: 30px 34px;
+        grid-template-columns: repeat(1, 100%);
+    }
+    .doctorimg {
+        width: 76%;
+        height: 332px;
+    }
+    .section-heading.doctor {
+        font-size: 28px;
+    }
+    
+}
+@media(max-width:481px){
+    .doctorimg {
+        width: 70%;
+        height: 293px;
+    }
+    .doctorsHeading {
+        font-size: 40px;
+    }
+}
+@media(max-width:380px){
+    .doctorimg {
+        width: 70%;
+        height: 215px;
+    }
+    .section-heading.doctor {
+        font-size: 22px;
+    }
+    .doctorsHeading {
+        font-size: 35px;
+    }
+}
+@media(max-width:321px){
+    .doctorimg {
+        width: 76%;
+        height: 169px;
+    }
+    .section-heading.doctor {
+        font-size: 20px;
+    }
+}
+

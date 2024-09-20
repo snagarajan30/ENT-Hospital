@@ -22,13 +22,13 @@
         <div class="navbar-container">
             <ul class="navbar-list">
                 <li class="navbar-nav">
-                    <a class="navbar-link" href="index.html">HOME</a>
+                    <a class="navbar-link" href="#">HOME</a>
                 </li>
                 <li class="navbar-nav">
                     <a class="navbar-link" href="treatments.html">TREATMENTS</a>
                 </li>
                 <li class="navbar-nav">
-                    <a class="navbar-link" href="#">DOCTORS</a>
+                    <a class="navbar-link" href="doctors.html">DOCTORS</a>
                 </li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -40,8 +40,8 @@
             <div class="side-menu" id="side-menu">
                 <!-- Your side menu content here -->
                 <ul>
-                    <div><li><a href="#">Home</a></li></div>
-                    <li class="treatmentLink-dropdown"><a href="#">Treatments</a>
+                    <li class="sideMenu-items"><a href="#"><span>Home</span></a></li>
+                    <li class="treatmentLink-dropdown"><a class="treatmentLinkDropdown-link" href="treatments.html"><span>Treatments</span></a> 
                     <ul class="treaments-link">
                         <li class="treatmentLinks-item"><a class="treatmentItems-link">Implant Otology</a></li>
                         <li class="treatmentLinks-item"><a class="treatmentItems-link">Otology</a></li>
@@ -52,9 +52,11 @@
                         <li class="treatmentLinks-item"><a class="treatmentItems-link">Snoring & Sleep Apnea</a></li>
                         <li class="treatmentLinks-item"><a class="treatmentItems-link">Skull base & Otoneuro</a></li>
                         <li class="treatmentLinks-item"><a class="treatmentItems-link">Surgery</a></li>
-                    </ul></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    </ul>
+                    <span class="treatmentLink-svg"></span>
+                    </li>
+                    <li class="sideMenu-items"><a href="#">Services</a></li>
+                    <li class="sideMenu-items"><a href="#">Contact</a></li>
                 </ul>
             </div>
             
@@ -1012,8 +1014,9 @@ items: 3
     </script>
     <script>
         $(document).ready(function() {
-            $('.treatmentLink-dropdown').on('click', function() {
+            $('.treatmentLink-svg').on('click', function() {
                 $('.treaments-link').toggleClass('down');
+                $('.treatmentLink-svg').toggleClass('active');
                 
             });
         });
