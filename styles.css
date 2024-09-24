@@ -3,6 +3,8 @@
 }
 html{
     scroll-behavior: smooth;
+    scrollbar-color: #e77924 #f6f7fc;
+    scrollbar-width:auto;
 }
 body{
     padding: 0;
@@ -11,6 +13,19 @@ body{
     transition: all 0.2s ease-out;
     
 }
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f6f7fc;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #7488bb;
+    border-radius: 10px;
+    border: 2px solid #8f9095;
+  }
 #scrollUp {
     bottom: 20px;
     right: 20px;
@@ -101,18 +116,18 @@ body{
 /* Side Menu */
 .side-menu {
     position: fixed;
-    top: 0;
-    left: -250px; /* Initially hidden off-screen */
-    width: 250px;
+    top: 82px;
+    right: -350px; /* Initially hidden off-screen */
+    width: 350px;
     height: 100%;
     background-color: white;
     overflow-y: auto;
-    transition: left 0.3s ease;
+    transition: right 0.3s ease;
     z-index: 999;
 }
 
 .side-menu.active {
-    left: 0; /* Slide in from the left */
+    right: 0; /* Slide in from the left */
 }
 
 .side-menu ul {
@@ -1132,6 +1147,10 @@ li.links4:hover{
     font-weight: 500;
     padding:10px;
     padding-bottom:30px;
+}
+.appaclink{
+    text-decoration: underline;
+    color:#3d60c0;
 }
 .footer-subContainer {
     display: flex;

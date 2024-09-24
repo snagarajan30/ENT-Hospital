@@ -3,6 +3,9 @@
 }
 html{
     scroll-behavior: smooth;
+    scrollbar-color: #e77924 #f6f7fc;
+    scrollbar-width:auto;
+
 }
 body{
     padding: 0;
@@ -10,6 +13,19 @@ body{
     overflow-x: hidden;
     transition: all 0.2s ease-out;
 }
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f6f7fc;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #7488bb;
+    border-radius: 10px;
+    border: 2px solid #f6f7fc;
+  }
 .doctors-profile{
     position: relative;
     background:#efefef;
@@ -24,7 +40,7 @@ body{
     background-repeat: no-repeat;
 }
 .doctorBanner-container{
-    /* margin: 90px auto 0px auto; */
+    margin: 90px auto 0px auto;
     position: relative;
     padding-top: 90px;
     z-index: 2;
@@ -38,6 +54,7 @@ body{
     height: 300px;
     background: rgba(88, 79, 79, 0.7);
     z-index: 1;
+   
     
 }
 .section-heading.doctor{
@@ -117,20 +134,29 @@ text-decoration: underline;
     border-radius: 50px;
     transition:all 0.3s ease-out;
 }
+.doctor-profile:hover .doctorimg{
+    transform: scale(1.05);
+}
 .doctor-profile:hover{
     box-shadow: 0px 0px 50px rgba(5, 5, 5, 0.08);
+}
+.doctorProfileImg-container{
+    overflow: hidden;
+    display: flex;
 }
 .doctorimg{
     width: 79%;
     height: 311px;
     margin: 0 auto;
-    display: block;
+    display: flex;
     object-fit: cover;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
 }
 .doctorProfileContent-container{
     width:100%;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     background:#efefef;
     margin-top:20px;
     
@@ -152,7 +178,7 @@ text-decoration: underline;
 .doctorDesignation{
     font-family: 'Libre Franklin';
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom:10px;
     font-weight: 500    ;
     
@@ -164,7 +190,40 @@ text-decoration: underline;
     font-size: 16px;
     color: #6e7691;
 }
+.appaclink{
+    text-decoration: underline;
+    color:#3d60c0;
+}
+.doctorKnowMore-link{
+    text-decoration: none;
+    color: #1a2751;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 30px;
 
+font-family: 'Libre Franklin';
+
+}
+.doctorKnowMore-link:hover{
+    border-bottom: 5px solid #1a2751;
+    color: #0d1b49;
+   
+}
+.doctorKnowMore{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    transition: all 0.3s ease-out;
+    display: flex;
+    justify-content: center;
+}
+.doctorKnowMore:hover{
+    transform: translateY(-10px);
+}
 /* responsiveness */
 @media(max-width:1441px){
     .doctorimg {
@@ -223,8 +282,12 @@ text-decoration: underline;
 @media(max-width:999px){
     .subDoctorProfile-container {
         display: grid;
-        grid-template-columns: repeat(2, 44.4%);
-        gap:95px;
+        grid-template-columns: repeat(2, 48.4%);
+        gap: 25px;
+    }
+    .doctorimg {
+        width: 68%;
+        height: 248px;
     }
     .doctorProfile-container {
         width: 85%;
@@ -232,7 +295,7 @@ text-decoration: underline;
 }
 @media(max-width:908px){
     .subDoctorProfile-container {
-        gap: 86px;
+        gap: 25px;
     }
     .section-heading.doctor {
         font-size: 40px;
@@ -243,18 +306,28 @@ text-decoration: underline;
 }
 @media(max-width:835px){
     .subDoctorProfile-container {
-        gap: 30px 79px;
+        gap: 30px 25px;
+        grid-template-columns: repeat(2, 48.2%)
     }
+    
 }
 @media(max-width:768px){
     .subDoctorProfile-container {
-        gap: 30px 72px;
+        gap: 30px 22px;
     }
 }
 @media(max-width:675px){
     .subDoctorProfile-container {
         gap: 30px 34px;
         grid-template-columns: repeat(2, 47%);
+
+    }
+    .doctorimg {
+        width: 68%;
+        height: auto;
+    }
+    .doctorProfile-container {
+        width: 90%;
     }
     .doctorProfileName {
         font-size: 1.2em;
@@ -305,6 +378,12 @@ text-decoration: underline;
     }
     .section-heading.doctor {
         font-size: 20px;
+    }
+    .side-menu {
+        position: fixed;
+        top: 51px;
+        
+        width: 100%;
     }
 }
 

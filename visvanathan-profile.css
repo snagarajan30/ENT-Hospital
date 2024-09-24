@@ -1,0 +1,248 @@
+.subBanner-container{
+    width: 100%;   
+         position: relative;
+    height: 300px; 
+    background-image: url('Images/doctors_banner.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+}
+.subBanner-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: rgba(88, 79, 79, 0.7);
+    z-index: 1;
+}
+.breadcrumb.visvanathan{
+    margin: auto;
+    justify-content: left;
+    padding-top: 70px;
+    
+    width: 85%;
+}
+.visvanathanProfile-container{
+    position: relative;
+    width:85%;
+    margin: 0 auto;
+}
+.mainVisvanathanProfile-container{
+    
+    display: grid;
+    grid-template-columns: 25% 70%;
+    justify-content: space-between;
+    position: relative;
+    top: -185px;
+    z-index: 2;
+    
+}
+.visvanathanImg-container{
+    z-index: 1;
+    position: relative;
+    animation: slideInLeft 1.5s ease-out; /* 1s duration, ease-out for a smooth finish */
+    opacity: 1; 
+}
+@keyframes slideInLeft{
+    0% {
+        transform: translateX(-100%); /* Start off the screen from the left */
+        opacity: 0; /* Hidden initially */
+      }
+      100% {
+        transform: translateX(0); /* Slide to its original position */
+        opacity: 1; /* Fully visible */
+      }
+}
+@keyframes slideInRight{
+    0% {
+        transform: translateX(200%); /* Start off the screen from the right */
+        opacity: 0; /* Hidden initially */
+      }
+      100% {
+        transform: translateX(0); /* Slide to its original position */
+        opacity: 1; /* Fully visible */
+      }
+}
+.visvanathanInfo-container{
+    animation: slideInRight 1s ease-out; /* 1s duration, ease-out for a smooth finish */
+    opacity: 1;
+}
+.visvanathan-img{
+    width:100%;
+}
+.subBanner-visvanathanProfile{
+    position: relative;
+}
+.visvanathanName-heading{
+    margin: 0;
+    font-family: 'Libre Baskerville';
+    font-size: 50px;
+    letter-spacing: -2px;
+    color:#ff8c34;
+    margin-bottom:20px;
+}
+.visvanathanAppointment{
+    display: flex;
+    margin: 0;
+}
+.visvanathan-designation{
+    margin:0px;
+    font-family: 'Libre Franklin';
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.visvanathanAppointment-link{
+    text-decoration: none;
+    color: #fff;
+    
+    transition: border-bottom 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+    border: 1px solid  #e77924;
+    border-radius: 30px;
+    font-family: 'Libre Franklin';
+    
+}
+.visvanathanAppointment-link:hover{
+    background:#e77924;
+    color:#fff;
+    transform: translateY(-10px);
+    
+}
+.visvanathanAboutHeading{
+    margin-top: 75px;
+    font-size: 35px;
+    font-family: 'Libre Baskerville';
+    color:#1a2751;
+    letter-spacing: -2px;
+}
+.visvanathanContent{
+    line-height: 1.3;
+    font-family: 'Libre Franklin';
+    color: #6e7691;
+    font-size: 20px;
+}
+.subVisvanathanProfile-container{
+    margin-bottom: -140px;
+}
+
+
+@media(max-width:1540px){
+    
+}
+@media(max-width:935px){
+    .visvanathanName-heading {
+       
+        font-size: 45px;
+    }
+    .mainVisvanathanProfile-container {
+     
+        grid-template-columns: 30% 65%;
+    }    
+}
+@media(max-width:908px){
+    .visvanathanName-heading {
+       
+        font-size: 40px;
+    }
+    .visvanathanContent {
+       
+        font-size: 17px;
+    }
+}
+@media(max-width:768px){
+    .visvanathanProfile-container {
+        
+        width: 90%;
+    }
+    .mainVisvanathanProfile-container {
+        grid-template-columns: 34% 63%;
+    }
+    .visvanathanName-heading {
+        font-size: 35px;
+    }
+    .visvanathanAboutHeading {
+       
+        font-size: 25px;
+        margin-top: 61px;
+    }
+    .visvanathan-designation {
+       
+        font-size: 19px;
+    }
+}
+@media(max-width:675px){
+    .mainVisvanathanProfile-container {
+        grid-template-columns: 100%;
+    }
+    .visvanathan-img {
+        width: 50%;
+    }
+    .visvanathan-designation {
+        
+        color: #6e7691;
+        text-align: center;
+    }
+    .visvanathanAppointment-link {
+        
+        color: #1a2751;
+    }
+    .visvanathanImg-container {
+        display: flex;
+        justify-content: center;
+    }
+    .visvanathanName-heading {
+       margin-top:10px;
+        text-align: center;
+    }
+    .visvanathanAppointment {
+        justify-content: center;
+    }
+    .visvanathanAboutHeading {
+        
+        text-align: center;
+    }
+
+}
+@media(max-width:481px){
+    .visvanathan-img {
+        width: 64%;
+    }
+    .visvanathanContent {
+        font-size: 16px;
+    }
+    .visvanathanName-heading {
+        font-size: 30px;
+    }
+    
+}
+
+@media(max-width:321px){
+    .breadcrumb-items span, .breadcrumb-items{
+        font-size:14px
+    }
+    .breadcrumb li {
+        padding-right: 5px !important;
+        
+    }
+    .visvanathan-img {
+        width: 90%;
+    }
+    .subBanner-container {
+       
+        margin-top: 52px;
+    }
+    .side-menu {
+        position: fixed;
+        top: 52px;
+        width: 100%;
+    }
+    .breadcrumb.visvanathan {
+      
+        padding-top: 46px;
+    }
+}
