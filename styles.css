@@ -2457,6 +2457,11 @@ content: " ";
         width: 257px;
         padding-top: 10px;
     }
+
+.side-menu {
+    
+    top: 73px;
+}
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -2791,6 +2796,9 @@ content: " ";
         margin: 0 auto;
         background-size: cover;
         position: relative;
+    }
+    .side-menu {
+        top: 69px;
     }
     .short-heading {
         color: #e6dbd4;
@@ -3603,6 +3611,9 @@ content: " ";
     .short-heading {
         font-size: 20px;
     }
+    .side-menu {
+        top: 64px;
+    }
     .heading{
         font-size: 33px;
     }
@@ -3870,6 +3881,9 @@ content: " ";
     .logo-img {
         width: 201px;
     }
+    .side-menu {
+        top: 60px;
+    }
     .hamburger{
         width: 26px;
         height: 26px;
@@ -4038,6 +4052,9 @@ content: " ";
         height: 308px;
         object-fit: cover;
                 border-radius: 0px 0px 20px 20px;
+    }
+    .side-menu {
+        top: 56px;
     }
     .mainBanner-container {
         width: 90%;
@@ -4240,6 +4257,10 @@ content: " ";
     .mainHeader-container {
         width: 90%;
     }
+    .side-menu {
+        top: 51px;
+        
+    }
     .logo-img {
         width: 165px;
     }
@@ -4363,6 +4384,10 @@ content: " ";
     .sectionSecond-container {
         padding-top: 40px;
         width: 85%;
+    }
+    .side-menu {
+        top: 51px;
+        width: 321px;
     }
     .sectionSecond-img {
         height: 210px;
