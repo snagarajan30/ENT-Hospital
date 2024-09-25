@@ -72,6 +72,7 @@
 }
 .visvanathan-img{
     width:100%;
+    border-radius:20px;
 }
 .subBanner-visvanathanProfile{
     position: relative;
@@ -124,10 +125,26 @@
     line-height: 1.3;
     font-family: 'Libre Franklin';
     color: #6e7691;
-    font-size: 20px;
+    font-size: 18px;
 }
 .subVisvanathanProfile-container{
     margin-bottom: -140px;
+}
+.back-link{
+    text-decoration: none;
+    color: white;
+    background: #e77924;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 22px;
+    font-family: 'Libre Franklin';
+    display: flex;
+    align-items:center;
+    width: 98px;
+    transition: all 0.3s ease-out;
+}
+.back-link:hover{
+    transform: translateY(-10px);
 }
 
 
