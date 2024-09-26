@@ -208,8 +208,9 @@ font-family: 'Libre Franklin';
 
 }
 .doctorKnowMore-link:hover{
-    border-bottom: 5px solid #1a2751;
+    box-shadow:0px 7px 0px #0d1b49;
     color: #0d1b49;
+    transform: translateY(calc(-1* var(--animation-depth, .375em)));
    
 }
 .doctorKnowMore{
@@ -221,10 +222,13 @@ font-family: 'Libre Franklin';
     display: flex;
     justify-content: center;
 }
-.doctorKnowMore:hover{
-    transform: translateY(-10px);
-}
+
 /* responsiveness */
+@media(max-width:1540px){
+    .doctorsHeading {
+        font-size: 50px;
+    }
+}
 @media(max-width:1441px){
     .doctorimg {
         width: 72%;

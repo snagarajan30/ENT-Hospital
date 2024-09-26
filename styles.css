@@ -1183,7 +1183,7 @@ li.links4:hover{
 }
 .sectionSecond-img {
     height: 430px;
-    width: 430px;
+    width: 390px;
 }
 .section-heading {
     
@@ -1196,6 +1196,10 @@ li.links4:hover{
     margin: 0;
     font-size: 53px;
 }   
+.count-head::after{
+    content: '+';
+position: absolute;
+}
 .countings-btn{
     font-size:13px;
 }
@@ -4291,7 +4295,9 @@ content: " ";
     }
     .count-head {
         font-size: 36px;
+        
     }
+    
     .countings-btn {
         font-size: 12px;
     }
