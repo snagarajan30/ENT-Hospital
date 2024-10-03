@@ -94,6 +94,9 @@
     line-height: 1.3;
     
 }
+.qlhead{
+    display: none;
+}
 /* .implantOtology-infoContainer, .implantOtology-infoContainer.two, .implantOtology-infoContainer.three, .implantOtology-infoContainer.four, .implantOtology-infoContainer.five, .implantOtology-infoContainer.six {
     width:56%;
     display: none;
@@ -111,10 +114,12 @@
 .implantOtology-infoContainer {
     display: none;
 }
-
+.implantOtology-mainContainer{
+    width: 56%;
+}
 .implantOtology-infoContainer.active {
     display: block;
-    width: 56%;
+   
    
     z-index: 1;
     position: relative;
@@ -170,3 +175,124 @@
     background: #8596c4;
     color: #fff;
 } */
+
+/* responsive starts*/
+@media(max-width:1441px){
+    .implantOtology-img{
+        width: 49%;
+        object-fit: cover;
+        height: 287px;
+    }
+    .implantOtology-infoContainer.active {
+       
+        width: 100%;
+    }
+}
+@media(max-width:1162px){
+    .implantOtologyContent-container {
+        width: 85%;
+    }    
+}
+@media(max-width:1078px){
+    .tab-container{
+        width: 40%;
+    }
+}
+@media(max-width:999px){
+    .section-heading.implant_otology {
+      
+        font-size: 55px;
+    }
+}
+@media(max-width:908px){
+.implantOtology-mainContainer{
+    width: 100%;
+}
+.implantOtologyContent-para{
+    font-size:16px;
+}
+}
+@media(max-width:835px){
+    .implantOtology-img {
+        width:62%;
+        object-fit: cover;
+        height: 263px;
+    }
+    .tab-container {
+        width: 34%;
+    }
+}
+@media(max-width:768px){
+    .implantOtologyTop-contaier{
+        display: block;
+    }
+    .implantOtology-imgContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .implantOtology-img{
+        width: 100%;
+        order: 2;
+    }
+    .tab-container{
+        width:100%;
+       
+    }
+    
+    .qlhead{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        color: #ffffff;
+        
+        padding: 13px 30px 13px 10px;
+        border: 1px solid transparent;
+        background-color:#8596c4;
+        font-weight: 600;
+        transition: all 0.3s ease-out;
+        font-family: 'Libre Franklin';
+        margin: 0px;
+        order: 1;
+    }
+    .tabbles-container{
+                max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease-out;
+        background: #ffffff;
+        box-shadow:0px 0px 0px;
+    }
+    .tabbles-container.down{
+        height: auto;
+        transition: max-height 0.5s linear !important;
+        max-height: 500px;
+       
+       
+    }
+    .section-heading.implant_otology {
+        font-size: 40px;
+    }
+}
+@media(max-width:495px){
+    .section-heading.implant_otology {
+        font-size: 30px;
+    }
+    
+}
+@media(max-width:380px){
+    .section-heading.implant_otology {
+        font-size: 27px;
+    }
+    .breadcrumb li {
+        padding-right: 4px;
+        color: #fff;
+    }
+}
+@media(max-width:321px){
+    .section-heading.implant_otology {
+        font-size: 23px;
+    }
+    .breadcrumb-items {
+        font-size: 14px;
+    }
+}
+
