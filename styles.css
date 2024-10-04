@@ -20,7 +20,11 @@ body{
   ::-webkit-scrollbar-track {
     background: #f6f7fc;
   }
-  
+
+      .count-head::after {
+        content: '+';
+        position: absolute;
+    }
   ::-webkit-scrollbar-thumb {
     background-color: #7488bb;
     border-radius: 10px;
@@ -1178,6 +1182,10 @@ li.links4:hover{
 .heading{
     font-size:70px;
 }
+.count-head::after {
+    content: '+';
+    position: absolute;
+}
 .banner-btn1, .banner-btn2{
     font-size: 14px;
 }
@@ -1276,6 +1284,10 @@ content: " ";
     .footer-addr {
         font-size: 12px;  
     }
+    .count-head::after {
+        content: '+';
+        position: absolute;
+    }
     .phone-link, .mail-link {
         font-size: 12px;
     }
@@ -1317,6 +1329,10 @@ content: " ";
         background-size: cover;
         position: relative;
         margin-top: 85px;
+    }
+    .count-head::after {
+        content: '+';
+        position: absolute;
     }
     .sectionSecond-container {
         width: 85%;
@@ -1434,6 +1450,10 @@ content: " ";
         background-size: cover;
         position: relative;
         margin-top:72px;
+    }
+    .count-head::after {
+        content: '+';
+        position: absolute;
     }
     .sectionSecond-container {
         width: 85%;
@@ -1579,6 +1599,10 @@ content: " ";
         position: absolute;
         top: 238px;
         left: 46px;
+    }
+    .count-head::after {
+        content: '+';
+        position: absolute;
     }
     .profiles {
         width: 97%;
@@ -1855,6 +1879,10 @@ content: " ";
     .logo-img {
         width: 300px;
         padding-top: 10px;
+    }
+    .count-head::after {
+        content: '+';
+        position: absolute;
     }
     .mainBanner-container {
         width: 90%;
@@ -2153,6 +2181,10 @@ content: " ";
         margin: 0 auto;
         background-size: cover;
         position: relative;
+    }
+    .count-head::after {
+        content: '+';
+        position: absolute;
     }
         .short-heading {
         color: #e6dbd4;
@@ -2465,6 +2497,10 @@ content: " ";
 .side-menu {
     
     top: 73px;
+}
+.count-head::after {
+    content: '+';
+    position: absolute;
 }
     .hamburger {
         display: flex;
@@ -2794,6 +2830,10 @@ content: " ";
     .logo-img {
         width: 243px;
         padding-top: 10px;
+    }
+    .count-head::after {
+        content: '+';
+        position: absolute;
     }
     .mainBanner-container {
         width: 90%;
@@ -3276,6 +3316,10 @@ content: " ";
         background-size: cover;
         position: relative;
     }
+    .count-head::after {
+        content: '+';
+        position: absolute;
+    }
     .short-heading {
         color: #e6dbd4;
         font-size: 24px;
@@ -3605,6 +3649,10 @@ content: " ";
     .hamburger{
         top: -4px;
     }
+    .count-head::after {
+        content: '+';
+        position: absolute;
+    }
     .btn {
         background-color: #e1e5f0;
         border: 1px solid #657aaf;
@@ -3775,6 +3823,10 @@ content: " ";
     .heading {
         font-size: 28px;
     }
+    .count-head::after {
+        content: '+';
+        position: absolute;
+    }
     .testimonials-heading {
         text-align: center;
         padding-bottom: 30px;
@@ -3894,6 +3946,10 @@ content: " ";
     }
     .mainBanner-container {
         width: 90%;
+    }
+    .count-head::after {
+        content: '+';
+        position: absolute;
     }
     .short-heading {
         font-size: 20px;
@@ -4059,6 +4115,10 @@ content: " ";
     }
     .side-menu {
         top: 56px;
+    }
+    .count-head::after {
+        content: '+';
+        position: absolute;
     }
     .mainBanner-container {
         width: 90%;
@@ -4276,6 +4336,10 @@ content: " ";
         width: 90%;
         margin: 0 auto;
     }
+    .count-head::after {
+        content: '+';
+        position: absolute;
+    }
     .next-line {
         display: inline;
     }
@@ -4390,6 +4454,10 @@ content: " ";
     .sectionSecond-container {
         padding-top: 40px;
         width: 85%;
+    }
+    .count-head::after {
+        content: '+';
+        position: absolute;
     }
     .side-menu {
         top: 51px;
