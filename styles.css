@@ -4109,7 +4109,7 @@ content: " ";
     .carousel-item img {
         width: 100%;
         display: block;
-        height: 308px;
+        height: 434px;
         object-fit: cover;
                 border-radius: 0px 0px 20px 20px;
     }
@@ -4125,7 +4125,7 @@ content: " ";
         margin: 0 auto;
     }
     .banner-contentContainer {
-        top: 119px;
+        top: 232px;
     }
     .sectionSecond-container {
         padding-top: 50px;
