@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
 }
 html{
@@ -59,7 +59,7 @@ body{
 .faq-heading{
     margin: 0;
     font-family:'Libre Baskerville'; 
-    font-size: 50px;
+    font-size: 44px;
     color:#1a2751;
     font-weight: 500;
     letter-spacing: -2px;
@@ -82,21 +82,21 @@ body{
 .accordion{
     width: 90%;
     margin: auto;
+    padding-bottom: 80px;
 }
 .accordion-item {
     background-color: #fff;
     color: #111;
     margin: 1rem 0;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
     margin-bottom:30px;
+
 }
 .accordion-item .active {
     background-color: #f5f5f5;
 }
-    /* .accordion-item:hover {
-        background-color: #f5f5f5;
-    } */
+    
 
 .accordion-item-header {
     padding: 0.5rem 3rem 0.5rem 1rem;
@@ -116,13 +116,17 @@ body{
 	
     padding: 1rem;
     line-height: 1.8rem;
-    border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
-	   
+   
 }
 .accordion-item-header.active::after {
     content: "\2212";
 }
+.accordion-item-header.active ~ .accordion-item-body{
+    border-bottom: 1px solid transparent;
+}
+.accordion-item-header.active{
+    border-bottom: 4px solid #e77924;
+}        
 .accordion-item-header:hover{
     background-color: #f5f5f5;
 }
@@ -135,7 +139,8 @@ body{
 .accordion-item-body {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s linear;
+    border-bottom: 4px solid #e77924;
 }
 	.accordion-item-header h2{font-size:16px;}
 .accordion-item-header h2:hover{color:#e87f30;}	.w8{width:80%;}
@@ -154,16 +159,52 @@ body{
 .faq-ul li, .accordion-item-body-content{
     font-family:'Libre Franklin';
     color:#6e7691;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #f5f5f5;
 }
 .accordion-item-header.active::after {
     content: "\2212";
 }
 .ch3.mb.text-center{
-    font-family:'Libre Franklin';
+    font-family: 'Libre Baskerville';
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 500;
     color:#6e7691;
 }
+
+
+
+@media(max-width:675px){
+    .accordion-item-header{
+        font-size: 18px;
+    }
+
+    .faq-heading {
+        font-size: 35px;
+    }
+    .accordion {
+        width: 100%;
+    }
+}
+@media(max-width:495px){
+    .faq-heading {
+        font-size: 27px;
+    }
+    .accordion-item-header{
+        font-size: 16px;
+    }
+    .section-heading.faq {
+        font-size: 44px;
+    }
+}
+@media(max-width:381px){
+    .faq-heading {
+        font-size: 23px;
+    }
+    .accordion {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 80px;
+}
+} */

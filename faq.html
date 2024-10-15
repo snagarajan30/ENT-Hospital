@@ -15,6 +15,220 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Frequently Asked Question</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+            scrollbar-color: #e77924 #f6f7fc;
+            scrollbar-width:auto;
+        
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            transition: all 0.2s ease-out;
+        }
+        ::-webkit-scrollbar {
+            width: 20px;
+          }
+          
+          ::-webkit-scrollbar-track {
+            background: #f6f7fc;
+          }
+          
+          ::-webkit-scrollbar-thumb {
+            background-color: #7488bb;
+            border-radius: 10px;
+            border: 2px solid #f6f7fc;
+          }
+          .faqBanner-container{
+            margin: 90px auto 0px auto;
+            position: relative;
+            padding-top: 55px;
+            z-index: 2;
+          }
+          .faqBanner{
+            width: 100%;
+            height: 200px;
+            background-image: url(/Images/faq\ banner.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .section-heading.faq{
+            text-align: center;
+            z-index: 2;
+            position: relative;
+            margin: 0;
+            font-size: 50px;
+            font-family: 'Libre Baskerville';
+            color: #fff;
+            letter-spacing: -2px;
+            font-weight: 500;
+            line-height: 1;
+        }
+        .faqSubBanner-container{
+            width: 90%;
+            margin: auto;
+        }
+        .faq-heading{
+            margin: 0;
+            font-family:'Libre Baskerville'; 
+            font-size: 44px;
+            color:#1a2751;
+            font-weight: 500;
+            letter-spacing: -2px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .bold-head{
+            font-weight: 700;
+        }
+        .faq-sub-heading{
+            margin: 0;
+            font-family:'Libre Franklin'; 
+            font-size: 40px;
+            color:#6e7691;
+            font-weight: 400;
+            letter-spacing: -2px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .accordion{
+            width: 90%;
+            margin: auto;
+            padding-bottom: 80px;
+        }
+        .accordion-item {
+            background-color: #fff;
+            color: #111;
+            margin: 1rem 0;
+            border-radius: 0.5rem 0.5rem 0 0;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+            margin-bottom:30px;
+        
+        }
+        .accordion-item .active {
+            background-color: #f5f5f5;
+        }
+            /* .accordion-item:hover {
+                background-color: #f5f5f5;
+            } */
+        
+        .accordion-item-header {
+            padding: 0.5rem 3rem 0.5rem 1rem;
+            min-height: 3.5rem;
+            line-height: 1.60rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+           
+            font-family:'Libre Baskerville'; 
+            font-size: 20px;
+            color:#1a2751;
+        }
+        .accordion-item-body-content {
+            
+            padding: 1rem;
+            line-height: 1.8rem;
+           
+        }
+        .accordion-item-header.active::after {
+            content: "\2212";
+        }
+        .accordion-item-header.active ~ .accordion-item-body{
+            border-bottom: 1px solid transparent;
+        }
+        .accordion-item-header.active{
+            border-bottom: 4px solid #e77924;
+        }        
+        .accordion-item-header:hover{
+            background-color: #f5f5f5;
+        }
+        .accordion-item-header::after {
+            content: "\002B";
+            font-size: 2rem;
+            position: absolute;
+            right: 1rem;
+        }
+        .accordion-item-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s linear;
+            border-bottom: 4px solid #e77924;
+        }
+            .accordion-item-header h2{font-size:16px;}
+        .accordion-item-header h2:hover{color:#e87f30;}	.w8{width:80%;}
+        .faq-sec p {
+            text-align: center;
+        }
+        .break-line {
+            display: block;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        .faq-ul{
+            list-style: none;
+            padding-left: 0;
+        }
+        .faq-ul li, .accordion-item-body-content{
+            font-family:'Libre Franklin';
+            color:#6e7691;
+            font-size: 16px;
+            background-color: #f5f5f5;
+        }
+        .accordion-item-header.active::after {
+            content: "\2212";
+        }
+        .ch3.mb.text-center{
+            font-family: 'Libre Baskerville';
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            color:#6e7691;
+        }
+        
+        /*responsiveness*/
+        
+        @media(max-width:675px){
+            .accordion-item-header{
+                font-size: 18px;
+            }
+        
+            .faq-heading {
+                font-size: 35px;
+            }
+            .accordion {
+                width: 100%;
+            }
+        }
+        @media(max-width:495px){
+            .faq-heading {
+                font-size: 27px;
+            }
+            .accordion-item-header{
+                font-size: 16px;
+            }
+            .section-heading.faq {
+                font-size: 44px;
+            }
+        }
+        @media(max-width:381px){
+            .faq-heading {
+                font-size: 23px;
+            }
+            .accordion {
+            width: 90%;
+            margin: auto;
+            padding-bottom: 80px;
+        }
+        }
+    </style>
 </head>
 <body>
     <header class="main-header sticky-header">
@@ -259,6 +473,7 @@
       ".accordion-item-header"
     );
     
+    
     accordionItemHeaders.forEach((accordionItemHeader) => {
       accordionItemHeader.addEventListener("click", (event) => {
         // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
@@ -266,6 +481,7 @@
         const currentlyActiveAccordionItemHeader = document.querySelector(
           ".accordion-item-header.active"
         );
+       
         if (
           currentlyActiveAccordionItemHeader &&
           currentlyActiveAccordionItemHeader !== accordionItemHeader
@@ -274,11 +490,19 @@
           currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
         }
         accordionItemHeader.classList.toggle("active");
+        
         const accordionItemBody = accordionItemHeader.nextElementSibling;
+       
         if (accordionItemHeader.classList.contains("active")) {
           accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+          
+         
+         
         } else {
           accordionItemBody.style.maxHeight = 0;
+          
+          
+        
         }
       });
     });
