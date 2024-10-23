@@ -3,8 +3,7 @@
 }
 html{
     scroll-behavior: smooth;
-    scrollbar-color: #e77924 #f6f7fc;
-    scrollbar-width:auto;
+    
 }
 body{
     padding: 0;
@@ -13,19 +12,7 @@ body{
     transition: all 0.2s ease-out;
     
 }
-::-webkit-scrollbar {
-    width: 20px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #f6f7fc;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #7488bb;
-    border-radius: 10px;
-    border: 2px solid #f6f7fc;
-  }
+
 .treatmentBanner-container{
 
     background-image:url('Images/treatment-banner-img.png');

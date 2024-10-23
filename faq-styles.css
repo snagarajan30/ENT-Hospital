@@ -1,10 +1,10 @@
-/* *{
+
+*{
     box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
-    scrollbar-color: #e77924 #f6f7fc;
-    scrollbar-width:auto;
+   
 
 }
 body{
@@ -13,19 +13,9 @@ body{
     overflow-x: hidden;
     transition: all 0.2s ease-out;
 }
-::-webkit-scrollbar {
-    width: 20px;
-  }
+
   
-  ::-webkit-scrollbar-track {
-    background: #f6f7fc;
-  }
   
-  ::-webkit-scrollbar-thumb {
-    background-color: #7488bb;
-    border-radius: 10px;
-    border: 2px solid #f6f7fc;
-  }
   .faqBanner-container{
     margin: 90px auto 0px auto;
     position: relative;
@@ -35,7 +25,7 @@ body{
   .faqBanner{
     width: 100%;
     height: 200px;
-    background-image: url(/Images/faq\ banner.webp);
+    background-image: url('Images/faq_banner.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,8 +69,8 @@ body{
     text-align: center;
     margin-top: 60px;
 }
-.accordion{
-    width: 90%;
+.accordion {
+    width: 60%;
     margin: auto;
     padding-bottom: 80px;
 }
@@ -96,24 +86,26 @@ body{
 .accordion-item .active {
     background-color: #f5f5f5;
 }
-    
+    /* .accordion-item:hover {
+        background-color: #f5f5f5;
+    } */
 
-.accordion-item-header {
-    padding: 0.5rem 3rem 0.5rem 1rem;
-    min-height: 3.5rem;
-    line-height: 1.60rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-   
-    font-family:'Libre Baskerville'; 
-    font-size: 20px;
-    color:#1a2751;
-}
+    .accordion-item-header {
+        padding: 0.5rem 3rem 0.5rem 1rem;
+        min-height: 3.5rem;
+        line-height: 1.60rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        transition: .2s linear;
+        font-family: 'Libre Baskerville';
+        font-size: 18px;
+        color: #1a2751;
+    }
 .accordion-item-body-content {
-	
+    
     padding: 1rem;
     line-height: 1.8rem;
    
@@ -125,7 +117,7 @@ body{
     border-bottom: 1px solid transparent;
 }
 .accordion-item-header.active{
-    border-bottom: 4px solid #e77924;
+    border-bottom: 1px solid #e77924;
 }        
 .accordion-item-header:hover{
     background-color: #f5f5f5;
@@ -140,9 +132,9 @@ body{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s linear;
-    border-bottom: 4px solid #e77924;
+    border-bottom: 1px solid #e77924;
 }
-	.accordion-item-header h2{font-size:16px;}
+    .accordion-item-header h2{font-size:20px;}
 .accordion-item-header h2:hover{color:#e87f30;}	.w8{width:80%;}
 .faq-sec p {
     text-align: center;
@@ -173,7 +165,7 @@ body{
     color:#6e7691;
 }
 
-
+/*responsiveness*/
 
 @media(max-width:675px){
     .accordion-item-header{
@@ -207,4 +199,4 @@ body{
     margin: auto;
     padding-bottom: 80px;
 }
-} */
+}

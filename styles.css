@@ -3,8 +3,7 @@
 }
 html{
     scroll-behavior: smooth;
-    scrollbar-color: #e77924 #f6f7fc;
-    scrollbar-width:auto;
+  
 }
 body{
     padding: 0;
@@ -13,13 +12,13 @@ body{
     transition: all 0.2s ease-out;
     
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 20px;
   }
   
   ::-webkit-scrollbar-track {
     background: #f6f7fc;
-  }
+  } */
 
       .count-head::after {
         content: '+';
@@ -120,11 +119,11 @@ body{
 /* Side Menu */
 .side-menu {
     position: fixed;
-    top: 82px;
+    top: 90px;
     right: -350px; /* Initially hidden off-screen */
     width: 350px;
     height: 100%;
-    background-color: white;
+    background-color: #eceef3;
     overflow-y: auto;
     transition: right 0.5s ease;
     z-index: 999;
@@ -1043,7 +1042,7 @@ footer {
     text-decoration: none;
     color:#727b96;
     font-family: 'Libre Franklin';
-    font-size:13px;
+    font-size:16px;
     font-weight:600;   
 }
 .link:hover{
@@ -1061,7 +1060,7 @@ footer {
     color:#727b96;
     font-family: 'Libre Franklin';
     font-weight:600;
-    font-size:13px;
+    font-size:16px;
     margin-top:19px;
 }
 .footer-phone, .footer-mail{
@@ -1115,7 +1114,7 @@ li.links4:hover{
     color:#727b96;
     font-weight:600;
     font-family: 'Libre Franklin';
-    font-size:14px;
+    font-size:16px;
 }
 .phone-link:hover, .mail-link:hover{
     text-decoration: underline;
@@ -1134,7 +1133,11 @@ li.links4:hover{
     font-family: 'Libre Franklin';
     letter-spacing: 3px;
     z-index: 1;
+    transition: all 0.3s linear ;
     
+}
+.book-appoinment:hover{
+    background-color:#449286;
 }
 
 .copyright-container{
@@ -3368,7 +3371,7 @@ content: " ";
         left: 11px;
     }
     .sectionSecond-container {
-        width: 85%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         gap: 20px;

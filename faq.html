@@ -1,234 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="faq-styles.css">
-<!-- <link rel="stylesheet" href="treatments-styles.css"> -->
-<link rel="stylesheet" href="doctors-styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="faq-styles.css">
+    <link rel="stylesheet" href="treatments-styles.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Frequently Asked Question</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        html{
-            scroll-behavior: smooth;
-            scrollbar-color: #e77924 #f6f7fc;
-            scrollbar-width:auto;
-        
-        }
-        body{
-            padding: 0;
-            margin: 0;
-            overflow-x: hidden;
-            transition: all 0.2s ease-out;
-        }
-        ::-webkit-scrollbar {
-            width: 20px;
-          }
-          
-          ::-webkit-scrollbar-track {
-            background: #f6f7fc;
-          }
-          
-          ::-webkit-scrollbar-thumb {
-            background-color: #7488bb;
-            border-radius: 10px;
-            border: 2px solid #f6f7fc;
-          }
-          .faqBanner-container{
-            margin: 90px auto 0px auto;
-            position: relative;
-            padding-top: 55px;
-            z-index: 2;
-          }
-          .faqBanner{
-            width: 100%;
-            height: 200px;
-            background-image: url('Images/faq_banner.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .section-heading.faq{
-            text-align: center;
-            z-index: 2;
-            position: relative;
-            margin: 0;
-            font-size: 50px;
-            font-family: 'Libre Baskerville';
-            color: #fff;
-            letter-spacing: -2px;
-            font-weight: 500;
-            line-height: 1;
-        }
-        .faqSubBanner-container{
-            width: 90%;
-            margin: auto;
-        }
-        .faq-heading{
-            margin: 0;
-            font-family:'Libre Baskerville'; 
-            font-size: 44px;
-            color:#1a2751;
-            font-weight: 500;
-            letter-spacing: -2px;
-            text-align: center;
-            margin-top: 50px;
-        }
-        .bold-head{
-            font-weight: 700;
-        }
-        .faq-sub-heading{
-            margin: 0;
-            font-family:'Libre Franklin'; 
-            font-size: 40px;
-            color:#6e7691;
-            font-weight: 400;
-            letter-spacing: -2px;
-            text-align: center;
-            margin-top: 60px;
-        }
-        .accordion{
-            width: 90%;
-            margin: auto;
-            padding-bottom: 80px;
-        }
-        .accordion-item {
-            background-color: #fff;
-            color: #111;
-            margin: 1rem 0;
-            border-radius: 0.5rem 0.5rem 0 0;
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-            margin-bottom:30px;
-        
-        }
-        .accordion-item .active {
-            background-color: #f5f5f5;
-        }
-            /* .accordion-item:hover {
-                background-color: #f5f5f5;
-            } */
-        
-        .accordion-item-header {
-            padding: 0.5rem 3rem 0.5rem 1rem;
-            min-height: 3.5rem;
-            line-height: 1.60rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            position: relative;
-            cursor: pointer;
-           
-            font-family:'Libre Baskerville'; 
-            font-size: 20px;
-            color:#1a2751;
-        }
-        .accordion-item-body-content {
-            
-            padding: 1rem;
-            line-height: 1.8rem;
-           
-        }
-        .accordion-item-header.active::after {
-            content: "\2212";
-        }
-        .accordion-item-header.active ~ .accordion-item-body{
-            border-bottom: 1px solid transparent;
-        }
-        .accordion-item-header.active{
-            border-bottom: 4px solid #e77924;
-        }        
-        .accordion-item-header:hover{
-            background-color: #f5f5f5;
-        }
-        .accordion-item-header::after {
-            content: "\002B";
-            font-size: 2rem;
-            position: absolute;
-            right: 1rem;
-        }
-        .accordion-item-body {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s linear;
-            border-bottom: 4px solid #e77924;
-        }
-            .accordion-item-header h2{font-size:16px;}
-        .accordion-item-header h2:hover{color:#e87f30;}	.w8{width:80%;}
-        .faq-sec p {
-            text-align: center;
-        }
-        .break-line {
-            display: block;
-            font-weight: 600;
-            padding-bottom: 10px;
-        }
-        .faq-ul{
-            list-style: none;
-            padding-left: 0;
-        }
-        .faq-ul li, .accordion-item-body-content{
-            font-family:'Libre Franklin';
-            color:#6e7691;
-            font-size: 16px;
-            background-color: #f5f5f5;
-        }
-        .accordion-item-header.active::after {
-            content: "\2212";
-        }
-        .ch3.mb.text-center{
-            font-family: 'Libre Baskerville';
-            text-align: center;
-            font-size: 20px;
-            font-weight: 500;
-            color:#6e7691;
-        }
-        
-        /*responsiveness*/
-        
-        @media(max-width:675px){
-            .accordion-item-header{
-                font-size: 18px;
-            }
-        
-            .faq-heading {
-                font-size: 35px;
-            }
-            .accordion {
-                width: 100%;
-            }
-        }
-        @media(max-width:495px){
-            .faq-heading {
-                font-size: 27px;
-            }
-            .accordion-item-header{
-                font-size: 16px;
-            }
-            .section-heading.faq {
-                font-size: 44px;
-            }
-        }
-        @media(max-width:381px){
-            .faq-heading {
-                font-size: 23px;
-            }
-            .accordion {
-            width: 90%;
-            margin: auto;
-            padding-bottom: 80px;
-        }
-        }
-    </style>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> <title>Frequently Asked Question</title>
 </head>
 <body>
     <header class="main-header sticky-header">
@@ -253,11 +38,11 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-            
+            <a href="#" class="book-appoinment">BOOK APPOINTMENT</a>
             <div class="side-menu" id="side-menu">
                 <!-- Your side menu content here -->
                 <ul>
-                    <li class="sideMenu-items"><a href="index.html"><span>Home</span></a></li>
+                    <li class="sideMenu-items"><a href="about_us.html"><span>About Us</span></a></li>
                     <li class="treatmentLink-dropdown"><a class="treatmentLinkDropdown-link" href="treatments.html"><span>Treatments</span></a> 
                     <ul class="treaments-link">
                         <li class="treatmentLinks-item"><a class="treatmentItems-link">Implant Otology</a></li>
@@ -301,7 +86,7 @@
             <h3 class="ch3 mb text-center">General Questions</h3>
               <div class="accordion-item">
                 <div class="accordion-item-header active">
-               1. What is snoring?
+               <h2>1. What is snoring?</h2>
                 </div>
                 <div class="accordion-item-body" style="max-height:100%;overflow:hidden;">
                   <div class="accordion-item-body-content">
@@ -320,7 +105,7 @@
               </div>
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                2. How to cure snoring?
+               <h2> 2. How to cure snoring?</h2>
                 </div>
                 <div class="accordion-item-body" style="max-height:0px;overflow:hidden;">
                   <div class="accordion-item-body-content">
@@ -330,7 +115,7 @@
               </div>
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                 3.What are the reasons that causes hearing defects?    
+                <h2>3.What are the reasons that causes hearing defects?</h2>    
                 </div>
                 <div class="accordion-item-body" style="max-height:0px;overflow:hidden;">
                   <div class="accordion-item-body-content">
@@ -340,7 +125,7 @@
               </div>
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                  4. How can i recognize hearing loss of my child, during early childhood?
+                 <h2> 4. How can i recognize hearing loss of my child, during early childhood?</h2>
                 </div>
                 <div class="accordion-item-body" style="max-height:0px;overflow:hidden;">
                   <div class="accordion-item-body-content">
@@ -350,7 +135,7 @@
               </div>
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                 5. I work in a highly polluted area, and hardly get time to clean my ears. Is it gonna cause any problem?
+                 <h2>5. I work in a highly polluted area, and hardly get time to clean my ears. Is it gonna cause any problem?</h2>
                 </div>
                 <div class="accordion-item-body" style="max-height:0px;overflow:hidden;">
                   <div class="accordion-item-body-content">
@@ -360,7 +145,7 @@
               </div>
                 <div class="accordion-item">
                 <div class="accordion-item-header">
-                6. I am 35 years old female, i keep getting dizziness and vertigo. Why?
+                <h2>6. I am 35 years old female, i keep getting dizziness and vertigo. Why?</h2>
                 </div>
                 <div class="accordion-item-body" style="max-height:0px;overflow:hidden;">
                   <div class="accordion-item-body-content">
@@ -370,7 +155,7 @@
               </div>
                <div class="accordion-item">
                 <div class="accordion-item-header">
-                7. What are the different reasons for nasal blockage?
+                <h2>7. What are the different reasons for nasal blockage?</h2>
                 </div>
                 <div class="accordion-item-body" style="max-height:0px;overflow:hidden;">
                   <div class="accordion-item-body-content">
@@ -384,7 +169,7 @@
               </div>
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                8. What is sinusitis exactly and what are the causes?
+                <h2>8. What is sinusitis exactly and what are the causes?</h2>
                 </div>
                 <div class="accordion-item-body" style="max-height:0px;overflow:hidden;">
                   <div class="accordion-item-body-content">
@@ -394,7 +179,7 @@
               </div>
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                9. I recurrently get hoarseness of voice. What are the causes?
+                <h2>9. I recurrently get hoarseness of voice. What are the causes?</h2>
                 </div>
                 <div class="accordion-item-body" style="max-height:0px;overflow:hidden;">
                   <div class="accordion-item-body-content">
@@ -406,7 +191,7 @@
               </div>
                <div class="accordion-item">
                 <div class="accordion-item-header">
-                10. How to treat hoarseness?
+                <h2>10. How to treat hoarseness?</h2>
                 </div>
                 <div class="accordion-item-body" style="max-height:0px;overflow:hidden;">
                   <div class="accordion-item-body-content">
@@ -468,45 +253,7 @@
     </div> -->
 </section>
 
-<script>
-    const accordionItemHeaders = document.querySelectorAll(
-      ".accordion-item-header"
-    );
-    
-    
-    accordionItemHeaders.forEach((accordionItemHeader) => {
-      accordionItemHeader.addEventListener("click", (event) => {
-        // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-    
-        const currentlyActiveAccordionItemHeader = document.querySelector(
-          ".accordion-item-header.active"
-        );
-       
-        if (
-          currentlyActiveAccordionItemHeader &&
-          currentlyActiveAccordionItemHeader !== accordionItemHeader
-        ){
-          currentlyActiveAccordionItemHeader.classList.toggle("active");
-          currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-        }
-        accordionItemHeader.classList.toggle("active");
-        
-        const accordionItemBody = accordionItemHeader.nextElementSibling;
-       
-        if (accordionItemHeader.classList.contains("active")) {
-          accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-          
-         
-         
-        } else {
-          accordionItemBody.style.maxHeight = 0;
-          
-          
-        
-        }
-      });
-    });
-        </script>
+
         <footer>
             <div class="footer-container">
                 <div class="footer-logo">
@@ -682,425 +429,12 @@
             </div>
         </div>
         </footer>   
-            <script src="main.js"></script>
-             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
-            
+          
         
-        
-            <script>
-                const divs = document.querySelectorAll('.treatments');
-        
-        divs.forEach(div => {
-            div.addEventListener('click', function() {
-                // Remove the 'active' class from all divs
-                divs.forEach(d => d.classList.remove('active'));
-                
-                // Add the 'active' class to the clicked div
-                this.classList.add('active');
-            });
-        });
-        
-            </script>
-            <script>
-                $(document).ready(function() {
-                    let currentSlide = 1; // Start at slide 1
-                    const totalSlides = 3; // Number of slides
-                    const intervalTime =4000; // Time between slides (in milliseconds)
-                
-                    // Function to go to the next slide
-                    function goToNextSlide() {
-                        currentSlide++;
-                        if (currentSlide > totalSlides) {
-                            currentSlide = 1; // Loop back to the first slide
-                        }
-                
-                        // Automatically check the corresponding radio button for the slide
-                        $('#slide' + currentSlide).prop('checked', true);
-                    }
-                
-                    // Start the autoplay
-                    let slideInterval = setInterval(goToNextSlide, intervalTime);
-                
-                    // Optional: Pause the autoplay on hover and resume after
-                    $('.carousel').hover(function() {
-                        clearInterval(slideInterval); // Pause the slideshow
-                    }, function() {
-                        slideInterval = setInterval(goToNextSlide, intervalTime); // Resume the slideshow
-                    });
-                });
-                
-            </script>
-            <script>
-                
-        $(document).ready(function() {if ( $(window).width() < 835 ) {startCarouselyt();} else {$('.profileCarousel').addClass('off');}});    
-        $(window).resize(function() {if ( $(window).width() < 835 ) {startCarouselyt();} else {stopCarousel();}});
-        function startCarouselyt(){       
-          $(".profileCarousel").owlCarousel({
-             slideSpeed : 500,
-             margin:10,
-             paginationSpeed : 400,
-             autoplay:false,
-              autoplayHoverPause:true,
-             items : 3,
-               dots: true,
-             loop:true,
-             nav:true,
-             responsive: {
-        0: {
-        items: 1
-        },
-        495: { // You can use 600 or 767 as per your preference
-            items: 2
-            },
-        600: { // You can use 600 or 767 as per your preference
-        items: 2
-        },
-        835: {
-        items: 3
-        }
-        }
-          });
-        }
-         
-          function stopCarousel() {
-          var owl = $('.twocols');
-          owl.trigger('destroy.owl.carousel');
-          owl.addClass('off');
-        }
-            </script>
-        
-             <script>
-             
-                $(document).ready(function() {
-                    if ($(window).width() < 835) {
-                        treatmentCarousel();
-                    } else {
-                        $('.treatmentCarousel').addClass('off'); // Adds 'off' class if not initialized
-                    }
-                });
-                
-                $(window).resize(function() {
-                    if ($(window).width() < 835) {
-                        treatmentCarousel();
-                    } else {
-                        stopBlogCarousel(); // Stops the carousel when window width is above 835px
-                    }
-                });
-                
-                function treatmentCarousel() {
-                    $(".treatmentCarousel").owlCarousel({
-                        slideSpeed: 500,
-                        margin: 10,
-                        paginationSpeed: 400,
-                        autoplay: true,
-                        autoplayHoverPause: true,
-                        items: 1,
-                        dots: true,
-                        rewind: true,
-                        nav: true,
-                        responsive: {
-                            0: {
-                                items: 1
-                            },
-                            430: {
-                                items: 1
-                            },
-                            480: {
-                                items: 1
-                            },
-                            481:{
-                                items: 2
-                            },
-                            769: {
-                                items: 2
-                            },
-                            835: {
-                                items: 3
-                            }
-                        }
-                    });
-                }
-                
-                function stopBlogCarousel() {
-                    var owl = $('.treatmentCarousel');
-                    owl.trigger('destroy.owl.carousel'); // Correctly destroys the Owl Carousel instance
-                    owl.removeClass('owl-carousel owl-loaded'); // Removes the Owl Carousel classes
-                    owl.find('.owl-stage-outer').children().unwrap(); // Unwraps Owl Carousel structure
-                    owl.removeClass('off'); // Optionally remove the 'off' class
-                }
-                
-            </script> 
-            <script>
-                $(document).ready(function() {
-                    if ($(window).width() < 835) {
-                        treatmentnoseCarousel();
-                    } else {
-                        $('.noseTreatmentCarousel').addClass('off'); // Adds 'off' class if not initialized
-                    }
-                });
-                
-                $(window).resize(function() {
-                    if ($(window).width() < 835) {
-                        treatmentnoseCarousel();
-                    } else {
-                        stopBlogCarousel(); // Stops the carousel when window width is above 835px
-                    }
-                });
-                
-                function treatmentnoseCarousel() {
-                    $(".noseTreatmentCarousel").owlCarousel({
-                        slideSpeed: 500,
-                        margin: 10,
-                        paginationSpeed: 400,
-                        autoplay: true,
-                        autoplayHoverPause: true,
-                        items: 1,
-                        dots: true,
-                        rewind: true,
-                        nav: true,
-                        responsive: {
-                            0: {
-                                items: 1
-                            },
-                            430: {
-                                items: 1
-                            },
-                            480: {
-                                items: 1
-                            },
-                            481:{
-                                items: 2
-                            },
-                            769: {
-                                items: 2
-                            },
-                            835: {
-                                items: 3
-                            }
-                        }
-                    });
-                }
-                
-                function stopBlogCarousel() {
-                    var owl = $('.noseTreatmentCarousel');
-                    owl.trigger('destroy.owl.carousel'); // Correctly destroys the Owl Carousel instance
-                    owl.removeClass('owl-carousel owl-loaded'); // Removes the Owl Carousel classes
-                    owl.find('.owl-stage-outer').children().unwrap(); // Unwraps Owl Carousel structure
-                    owl.removeClass('off'); // Optionally remove the 'off' class
-                }
-            </script>
-            <script>
-                $(document).ready(function() {
-                    if ($(window).width() < 835) {
-                        treatmentthroatCarousel();
-                    } else {
-                        $('.throatTreatmentCarousel').addClass('off'); // Adds 'off' class if not initialized
-                    }
-                });
-                
-                $(window).resize(function() {
-                    if ($(window).width() < 835) {
-                        treatmentthroatCarousel();
-                    } else {
-                        stopBlogCarousel(); // Stops the carousel when window width is above 835px
-                    }
-                });
-                
-                function   treatmentthroatCarousel() {
-                    $(".throatTreatmentCarousel").owlCarousel({
-                        slideSpeed: 500,
-                        margin: 10,
-                        paginationSpeed: 400,
-                        autoplay: true,
-                        autoplayHoverPause: true,
-                        items: 1,
-                        dots: true,
-                        rewind: true,
-                        nav: true,
-                        responsive: {
-                            0: {
-                                items: 1
-                            },
-                            430: {
-                                items: 1
-                            },
-                            480: {
-                                items: 1
-                            },
-                            481:{
-                                items: 2
-                            },
-                            769: {
-                                items: 2
-                            },
-                            835: {
-                                items: 3
-                            }
-                        }
-                    });
-                }
-                
-                function stopBlogCarousel() {
-                    var owl = $('.throatTreatmentCarousel');
-                    owl.trigger('destroy.owl.carousel'); // Correctly destroys the Owl Carousel instance
-                    owl.removeClass('owl-carousel owl-loaded'); // Removes the Owl Carousel classes
-                    owl.find('.owl-stage-outer').children().unwrap(); // Unwraps Owl Carousel structure
-                    owl.removeClass('off'); // Optionally remove the 'off' class
-                }
-            </script>
-            <script>
-                $(document).ready(function() {if ( $(window).width() < 835 ) {blogCarousel();} else {$('.blogCarousel ').addClass('off');}});    
-                $(window).resize(function() {if ( $(window).width() < 835 ) {blogCarousel();} else {stopBlogCarousel();}});
-                function blogCarousel(){       
-                  $(".blogCarousel ").owlCarousel({
-                     slideSpeed : 500,
-                     margin:10,
-                     paginationSpeed : 400,
-                     autoplay:false,
-                      autoplayHoverPause:true,
-                     items : 3,
-                       dots: true,
-                     loop:true,
-                     nav:true,
-                     responsive: {
-           0: {
-               items: 1
-           },
-          480: { // You can use 600 or 767 as per your preference
-            items: 1
-        },
-        495:{
-            items: 2
-        },
-           769: { // You can use 600 or 767 as per your preference
-               items: 3
-           },
-           835: {
-               items: 3
-           }
-        }
-                  });
-                }
-                 
-                  function stopBlogCarousel() {
-                  var owl = $('.twocols');
-                  owl.trigger('destroy.owl.carousel');
-                  owl.addClass('off');
-                }
-        
-           
-        
-        
-        
-        
-        
-            </script>
-            <script>
-                $(document).ready(function() {
-                    $('.quickLinks-headingContainer').on('click', function() {
-                        $('.footer-dropdown1').toggleClass('active');
-                        $('.footersvg1').toggleClass('down');
-                    });
-                });
-            </script>
-            <script>
-                $(document).ready(function() {
-                    $('.hamburger').on('click', function() {
-                        $('.hamburger').toggleClass('active');
-                        $('.side-menu').toggleClass('active');
-                    });
-                });
-            </script>
-            <script>
-                $(document).ready(function() {
-                    $('.treatmentsHeading-container').on('click', function() {
-                        $('.footer-dropdown2').toggleClass('active');
-                        $('.footersvg2').toggleClass('down');
-                    });
-                });
-            </script>
-            <script>
-                $(document).ready(function() {
-                    $('.reachUs-headingContainer').on('click', function() {
-                        $('.footerAddr-container').toggleClass('active');
-                        $('.footersvg3').toggleClass('down');
-                    });
-                });
-            </script>
-            <script>
-                $(document).ready(function() {
-                    $('.treatmentLink-svg').on('click', function() {
-                        $('.treaments-link').toggleClass('down');
-                        $('.treatmentLink-svg').toggleClass('active');
-                        
-                    });
-                });
-            </script>
-           <script>
-            $(document).ready(function() {
-                $(".tesimonialscarousel").owlCarousel({
-                 slideSpeed : 500,
-                 margin:10,
-                 paginationSpeed : 400,
-                 autoplay:true,
-                 autoplayHoverPause:true,
-                 smartSpeed: 600,
-                 items : 1,
-                 dots: true,
-                 loop:true,
-                 nav:true,
-                   
-              })
-            });
-            
-           </script>
-           <script>
-            $(document).ready(function() {
-                $(window).scroll(function() {
-                    // Check the scroll position
-                    if ($(this).scrollTop() > 300) {  // 200px is the scroll amount
-                        $('#scrollUp').fadeIn();  // Show the element with a fade effect
-                    } else {
-                        $('#scrollUp').fadeOut(); // Hide the element if scrolled back up
-                    }
-                });
-            });
-            </script>
-            <script>
-                var counted = 0;
-                $(window).scroll(function() {
-                
-                  var oTop = $('#counter').offset().top - window.innerHeight;
-                  if (counted == 0 && $(window).scrollTop() > oTop) {
-                    $('.count-head').each(function() {
-                      var $this = $(this),
-                        countTo = $this.attr('data-count');
-                      $({
-                        countNum: $this.text()
-                      }).animate({
-                          countNum: countTo
-                        },
-                
-                        {
-                
-                          duration: 2000,
-                          easing: 'swing',
-                          step: function() {
-                            $this.text(Math.floor(this.countNum));
-                          },
-                          complete: function() {
-                            $this.text(this.countNum);
-                          }
-                
-                        });
-                    });
-                    counted = 1;
-                  }
-                
-                }); 
-            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js">
+        </script>
            <a id="scrollUp" href="#top" title="Scroll to top" style="position: fixed;z-index: 2147483647;display: block;">Scroll to top</a>
 </body>
 
