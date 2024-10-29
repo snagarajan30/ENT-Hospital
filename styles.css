@@ -10,6 +10,11 @@ body{
     margin: 0;
     overflow-x: hidden;
     transition: all 0.2s ease-out;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 16px;
+   
+    font-weight: 400;
+    color: #4f5050;
     
 }
 /* ::-webkit-scrollbar {
@@ -155,7 +160,7 @@ body{
     align-items: center;
     justify-content: space-between; */
 }
-.treatmentLink-dropdown{
+.careerLink-dropdown{
    
     border-bottom: 1px solid #ccc;
     text-decoration: none;
@@ -164,11 +169,11 @@ body{
     font-family: 'Libre Franklin';
     position: relative;
 }
-.treatmentLink-dropdown .treatmentLinkDropdown-link{
+.careersLink-dropdown .careersLinkDropdown-link{
     padding:13px 30px 13px 10px;
     display: block;
 }
-.treatmentLink-dropdown li{
+.careersLink-dropdown li{
    
     padding: 12px 22px;
     border-bottom: 1px solid #eee;
@@ -918,11 +923,17 @@ font-weight: 600;
 .dot span{
     cursor: pointer;
 } */
-    .blog-content{
+    /* .blog-content{
         display: flex;
         gap: 36px;
         padding-top:60px;
 
+    } */
+    .blog-content {
+        display: grid;
+        gap: 36px;
+        padding-top: 60px;
+        grid-template-columns: repeat(3, 1fr);
     }
 .blogs-container{
     padding-top:60px;
@@ -3586,6 +3597,12 @@ content: " ";
         transition: all 0.2s ease-out;
         cursor: pointer;
     }
+    /* facility section */
+    .facilityContainer{
+        width: 90%;
+        margin:auto;
+    }
+
     .testimonials-container {
         width:90%;
         margin: 0 auto;

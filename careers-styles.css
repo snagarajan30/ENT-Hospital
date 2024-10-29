@@ -1,0 +1,106 @@
+.careersBanner{
+    width: 100%;   
+         
+    height: 300px; 
+    background-image: url('Images/faq_banner.webp'); 
+    background-size: cover !important;
+    background-position: right !important;
+    position: relative;
+   
+
+}
+.careersBanner-container{
+    margin: 90px auto 0px auto;
+    position: relative;
+    padding-top: 90px;
+    z-index: 2;
+    
+}
+
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+.careerInfo-container{
+    width: 90%;
+    margin: auto;
+    padding:120px 0;
+}
+.section-heading.career{
+    text-align: center;
+}
+.section-para.career{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 26px;
+    width: 70%;
+    margin: auto;
+}
+.c-frm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-wrp {
+    display: flex;
+    gap: 10px;
+}
+.c-frm input {
+    font-size: 16px;
+}
+.c-frm input, .c-frm select {
+    padding: 0px 20px;
+}   
+.c-frm input, .c-frm select {
+    width: 100%;
+    outline: 0px;
+    border: none;
+    background-color: #f5f5f5;
+    font-family: 'Libre Franklin';
+    height: 50px;
+    border-bottom: 1px solid #4f5497;
+    align-content: center;
+    display: block;
+}
+.careerForm-container{
+    width:70%;
+    margin: auto;
+    padding-top:40px;
+}
+.gender-wrp {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #192751;
+    padding: 0px 20px;
+}
+.gender-wrp label{
+    font-weight:500;
+    color:#192751;
+}
+.snd-btn {
+    padding: 15px 25px;
+    border: 1px solid;
+    background-color: #0f1e71;
+    color: #fff;
+    width: fit-content;
+    font-family: 'Libre Franklin';
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.snd-btn:hover {
+    background-color: #e77924;
+}
+
+/* responsiveness */
+@media(max-width:1162px){
+    .careerForm-container {
+        width: 80%;
+    }
+}
+@media (max-width: 835px) {
+    .careerForm-container {
+        width: 90%;
+    }
+}

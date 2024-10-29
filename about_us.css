@@ -382,6 +382,9 @@ width: 21px;
     .section-para {
         font-size: 16px;
     }
+    .infraCarousel.owl-carousel img{
+        width: 100% !important ;
+    } 
 }
 @media(max-width:676px){
     .sectionSecond-img {
@@ -412,3 +415,8 @@ width: 21px;
     }
     
     }
+    @media (max-width: 481px) {
+        .infraCarousel .owl-carousel .owl-nav .owl-prev svg, .infraCarousel {
+            height: 30px;
+        }
+        }
